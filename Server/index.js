@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const contactRoutes = require("./routes/contactRoutes");
+const stickyRoutes = require("./routes/stickyRoutes");
 
 dotenv.config();
 
@@ -17,7 +18,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api", contactRoutes);
-
+app.use("/api/sticky", stickyRoutes);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
