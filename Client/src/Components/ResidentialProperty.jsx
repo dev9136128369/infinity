@@ -620,40 +620,40 @@ const ResidentialPropertiesPage = () => {
   const trendingProperties = [
     {
       id: 1,
-      title: "IVY COUNTY",
-      location: "Sec 75, Noida",
-      price: "₹ 1.50 CR",
+     title: "CIVITECH STRINGS",
+      location: "SECTOR-12, NOIDA",
+      price: "₹44 Lac",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
     },
     {
       id: 2,
-      title: "MAX STATES",
-      location: "Sec 128, Noida",
-      price: "₹ 8.50 CR",
+       title: "COUNTY 107",
+      location: "SECTOR 107, NOIDA",
+      price: "₹3.13 CR*",
       type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
       link: "#"
     },
     {
       id: 3,
-      title: "STELLAR ONE PHASE 2",
-      location: "SECTOR 1, NOIDA",
-      price: "₹ 1.26 CR",
+           title: "EUREKA PARK",
+      location: "SECTOR 150, NOIDA",
+      price: "₹1.05 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
       link: "#"
     },
 
 
      {
       id: 4,
-      title: "GODREJ WOOD",
-      location: "SECTOR 43, NOIDA",
-      price: "₹ 1.35 CR",
+      title: "M3M THE CULLINAN",
+      location: "SECTOR 94, NOIDA",
+      price: "₹5.88 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
     },
     {
@@ -667,42 +667,49 @@ const ResidentialPropertiesPage = () => {
     },
     {
       id: 6,
-      title: "M3M THE CULLINAN",
-      location: "SECTOR 94, NOIDA",
-      price: "₹5.88 CR",
+title: "GODREJ WOOD",
+      location: "SECTOR 43, NOIDA",
+      price: "₹ 1.35 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
       link: "#"
+
+     
     },
 
 
 
      {
       id: 7,
-      title: "EUREKA PARK",
-      location: "SECTOR 150, NOIDA",
-      price: "₹1.05 CR",
-      type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
-      link: "#"
-    },
-    {
-      id: 8,
-      title: "COUNTY 107",
-      location: "SECTOR 107, NOIDA",
-      price: "₹3.13 CR*",
-      type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
-      link: "#"
-    },
-    {
-      id: 9,
-      title: "CIVITECH STRINGS",
-      location: "SECTOR-12, NOIDA",
-      price: "₹44 Lac",
+ title: "STELLAR ONE PHASE 2",
+      location: "SECTOR 1, NOIDA",
+      price: "₹ 1.26 CR",
       type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
+
+
+    },
+    {
+      id: 8,
+ title: "MAX STATES",
+      location: "Sec 128, Noida",
+      price: "₹ 8.50 CR",
+      type: "Residential",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
+      link: "#"
+
+     
+    },
+    {
+      id: 9,
+  title: "IVY COUNTY",
+      location: "Sec 75, Noida",
+      price: "₹ 1.50 CR",
+      type: "Residential",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+      link: "#"
+
     }
 
 
@@ -712,18 +719,18 @@ const ResidentialPropertiesPage = () => {
   const affordableProperties = [
     {
       id: 1,
-      title: "BIRLA NAVYA",
-      location: "SECTOR 63 A, GURGAON",
-      price: "₹ 1.3 CR",
+   title: "SIGNATURE GLOBAL",
+      location: "SECTOR 36, GURGAON",
+      price: "₹1.70 CR*",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-13.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
       link: "#"
     },
     {
       id: 2,
-      title: "EMAAR DIGI HOMES",
-      location: "SECTOR 62 GURGAON",
-      price: "₹ 1.7 CR",
+   title: "CRC JOYOUS",
+      location: "TECHZONE IV, GREATER NOIDA WEST",
+      price: "₹59.90 Lacs*",
       type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
       link: "#"
@@ -739,32 +746,36 @@ const ResidentialPropertiesPage = () => {
     },
       {
       id: 4,
-      title: "CRC JOYOUS",
-      location: "TECHZONE IV, GREATER NOIDA WEST",
-      price: "₹59.90 Lacs*",
+  title: "EMAAR DIGI HOMES",
+      location: "SECTOR 62 GURGAON",
+      price: "₹ 1.7 CR",
       type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
       link: "#"
+
+     
     },
     {
       id: 5,
-      title: "SIGNATURE GLOBAL",
-      location: "SECTOR 36, GURGAON",
-      price: "₹1.70 CR*",
+  title: "BIRLA NAVYA",
+      location: "SECTOR 63 A, GURGAON",
+      price: "₹ 1.3 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-13.jpg",
       link: "#"
+
+     
     }
   ];
 
   const primeProperties = [
     {
       id: 1,
-      title: "BESTECH CENTRA",
-      location: "SECTOR-88, GURGAON",
-      price: "₹ 2.77 CR",
+       title: "SIGNATURE GLOBAL",
+      location: "SECTOR-36, GURGAON",
+      price: "₹ 1.70 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1388388393Neotown-Dec-2013-night-view-1024x577-1-768x433.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/gurgaon.jpg",
       link: "#"
     },
     {
@@ -778,21 +789,24 @@ const ResidentialPropertiesPage = () => {
     },
     {
       id: 3,
-      title: "SIGNATURE GLOBAL",
-      location: "SECTOR-36, GURGAON",
-      price: "₹ 1.70 CR",
+ title: "BESTECH CENTRA",
+      location: "SECTOR-88, GURGAON",
+      price: "₹ 2.77 CR",
       type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/gurgaon.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1388388393Neotown-Dec-2013-night-view-1024x577-1-768x433.jpg",
       link: "#"
+
+     
     }
   ];
 
   const testimonials = [
     {
       id: 1,
-      text: "Raj Lakshmi Reality helped me find the perfect home for my family. Their service was exceptional and they understood exactly what we needed.",
-      author: "Rahul Sharma",
-      role: "Home Owner"
+      
+      text: "I'm extremely satisfied with the investment advice provided by Raj Lakshmi Reality. Their knowledge of the residential real estate market is impressive.",
+      author: "Vikram Singh",
+      role: "Investor"
     },
     {
       id: 2,
@@ -802,9 +816,10 @@ const ResidentialPropertiesPage = () => {
     },
     {
       id: 3,
-      text: "I'm extremely satisfied with the investment advice provided by Raj Lakshmi Reality. Their knowledge of the residential real estate market is impressive.",
-      author: "Vikram Singh",
-      role: "Investor"
+ text: "Raj Lakshmi Reality helped me find the perfect home for my family. Their service was exceptional and they understood exactly what we needed.",
+      author: "Rahul Sharma",
+      role: "Home Owner"
+
     }
   ];
 

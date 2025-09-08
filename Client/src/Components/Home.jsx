@@ -16,28 +16,30 @@ const home = () => {
 
   // Background images array
   const backgroundImages = [
-    "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-14.56.41.jpeg",
-    "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana.jpg",
-    "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-14.59.24.jpeg",
-    "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-15.01.11.jpeg",
-    "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-14.57.00.jpeg"
+    "/Images/HomeBanner2.jpg",
+    "/Images/HomeBanner3.jpg",
+    "/Images/heros.jpg",
+    "/Images/bildings.jpg",
+    // "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-14.57.00.jpeg"
   ];
 
 
   const properties = [
     {
       id: 1,
-      title: "Tata Eureka",
-      location: "Sector 150, Noida, UP",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/tata1.webp",
+       title: "County 107",
+      location: "SECTOR 107, NOIDA",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/county-107.jpg",
       link: "#"
+     
     },
     {
       id: 2,
-      title: "CRC JOYOUS",
-      location: "Techzone 1V, Greater Noida West",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/joyous-1024x614.jpg",
+       title: "Godrej Wood",
+      location: "Sector 43, Noida",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/godrej-woods.jpg",
       link: "#"
+   
     },
     {
       id: 3,
@@ -48,16 +50,16 @@ const home = () => {
     },
     {
       id: 4,
-      title: "Godrej Wood",
-      location: "Sector 43, Noida",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/godrej-woods.jpg",
+        title: "CRC JOYOUS",
+      location: "Techzone 1V, Greater Noida West",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/joyous-1024x614.jpg",
       link: "#"
     },
     {
       id: 5,
-      title: "County 107",
-      location: "SECTOR 107, NOIDA",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/county-107.jpg",
+       title: "Tata Eureka",
+      location: "Sector 150, Noida, UP",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/tata1.webp",
       link: "#"
     }
   ];
@@ -67,31 +69,33 @@ const home = () => {
  const locations = [
     {
       id: 1,
-      name: "NOIDA",
-      image: noidaImage,
-      description: "Premium real estate opportunities in the heart of Noida",
-      properties: "125+ Properties"
-    },
-    {
-      id: 2,
-      name: "GREATER NOIDA",
-      image: greaterNoidaImage,
-      description: "Expanding horizons with modern infrastructure and connectivity",
-      properties: "89+ Properties"
-    },
-    {
-      id: 3,
-      name: "GURGAON",
+       name: "GURGAON",
       image: gurgaonImage,
       description: "Commercial hub with world-class business districts",
       properties: "156+ Properties"
     },
     {
-      id: 4,
-      name: "DUBAI",
+      id: 2,
+     name: "DUBAI",
       image: dubaiImage,
       description: "Luxury properties in the global cosmopolitan city",
       properties: "72+ Properties"
+    },
+    {
+      id: 3,
+       name: "NOIDA",
+      image: noidaImage,
+      description: "Premium real estate opportunities in the heart of Noida",
+      properties: "125+ Properties"
+   
+    },
+    {
+      id: 4,
+      name: "GREATER NOIDA",
+      image: greaterNoidaImage,
+      description: "Expanding horizons with modern infrastructure and connectivity",
+      properties: "89+ Properties"
+    
     }
   ];
 
@@ -121,9 +125,9 @@ const home = () => {
 
   const statsData = [
     {
-      icon: 'fas fa-handshake',
-      title: 'CUSTOMERS',
-      description: 'Our real estate agency has earned the satisfaction of 1,000 clients who consistently return, reflecting their unwavering trust in our property services.'
+      icon: 'fas fa-chalkboard-teacher',
+      title: 'TIE-UPS',
+      description: 'With a network comprising with channel partners, our organization has gained a reputation for collaborating with credible and highly esteemed business entities.'
     },
     {
       icon: 'fas fa-people-arrows',
@@ -131,9 +135,10 @@ const home = () => {
       description: 'Our team comprises of over 50+ highly qualified and extensively trained real estate professionals who are committed to providing exceptional service and delivering optimal results to our valued clients.'
     },
     {
-      icon: 'fas fa-chalkboard-teacher',
-      title: 'TIE-UPS',
-      description: 'With a network comprising with channel partners, our organization has gained a reputation for collaborating with credible and highly esteemed business entities.'
+       icon: 'fas fa-handshake',
+      title: 'CUSTOMERS',
+      description: 'Our real estate agency has earned the satisfaction of 1,000 clients who consistently return, reflecting their unwavering trust in our property services.'
+     
     }
   ];
 
@@ -141,28 +146,30 @@ const home = () => {
     const partners = [
     {
       id: 1,
-      name: "M3M",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/m3m_230x69.png"
-    },
-    {
-      id: 2,
-      name: "Signature Global",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-115720.png"
-    },
-    {
-      id: 3,
-      name: "Godrej Properties",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-115902.png"
-    },
-    {
-      id: 4,
-      name: "Tata Housing",
+     name: "Tata Housing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-120016.png"
     },
     {
-      id: 5,
-      name: "DLF",
+      id: 2,
+        name: "DLF",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-120037.png"
+    },
+    {
+      id: 3,
+          name: "Tata Housing",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/1678530097-e1695713450853.png"
+    },
+    {
+      id: 4,
+       name: "M3M",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/m3m_230x69.png"
+     
+    },
+    {
+      id: 5,
+       name: "Signature Global",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-115720.png"
+    
     },
     {
       id: 6,
@@ -171,8 +178,9 @@ const home = () => {
     },
     {
       id: 7,
-      name: "Tata Housing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/1678530097-e1695713450853.png"
+      name: "Godrej Properties",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/Screenshot-2023-08-28-115902.png"
+
     },
     {
       id: 8,
@@ -191,13 +199,14 @@ const home = () => {
     const blogPosts = [
     {
       id: 1,
-      title: "Benefits of living in Incuspaze Tower?",
-      description: "INCUSPAZE TOWER is a project With the luxurious residential development,",
-      link: "#",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=60",
+       title: "How to choose your first Property?",
+      description: "There are many things to consider before purchasing your first property.",
+      link: "https://rajlakshmirealty.com/1589-2/",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
-      readTime: "3 min read"
+      readTime: "5 min read"
+    
     },
     {
       id: 2,
@@ -211,13 +220,13 @@ const home = () => {
     },
     {
       id: 3,
-      title: "How to choose your first Property?",
-      description: "There are many things to consider before purchasing your first property.",
-      link: "https://rajlakshmirealty.com/1589-2/",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60",
+      title: "Benefits of living in Incuspaze Tower?",
+      description: "INCUSPAZE TOWER is a project With the luxurious residential development,",
+      link: "#",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=60",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
-      readTime: "5 min read"
+      readTime: "3 min read"
     }
   ];
   // const nextSlide = () => {
@@ -284,7 +293,7 @@ const home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % backgroundImages.length);
-    }, 5000);
+    }, 9000);
     
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
@@ -311,7 +320,7 @@ const home = () => {
 
   return (
     <div>
-        <section className="hero-section">
+        <section className="hero-sections">
       {/* Background Slideshow */}
       <div className="hero-background">
         {backgroundImages.map((image, index) => (

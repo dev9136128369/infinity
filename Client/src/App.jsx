@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Lazy loading Navbar
 const Navbar = lazy(() => import('./Navbar.jsx'));
 const Footer = lazy(() => import('./Footer.jsx'));
-const Home = lazy(() => import('./Components/home.jsx'));
+const Home = lazy(() => import('./Components/Home.jsx'));
 const About = lazy(() => import('./Components/About.jsx'));
 
 const BlogCards = lazy(() => import('./Components/BlogCards.jsx'));

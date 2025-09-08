@@ -696,26 +696,26 @@ const CommercialPropertiesPage = () => {
   const commercialProperties = [
     {
       id: 1,
-      title: "Fairfox EON",
-      location: "Sector 140A, Noida",
-      price: "₹35 Lacs*",
-      size: "200-500 Sq.Ft.",
-      units: "25+",
+      title: "M3M MY DEN",
+      location: "SECTOR-67, GURGAON",
+      price: "₹1.37 Cr*",
+      size: "800-1500 Sq.Ft.",
+      units: "5+",
       status: "Ready to Move",
       type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
     {
       id: 2,
-      title: "Group 108 ONE FNG",
-      location: "Sector-142, Noida",
-      price: "₹60 Lacs*",
-      size: "300-800 Sq.Ft.",
-      units: "15+",
+       title: "SIGNATURE GLOBAL",
+      location: "SECTOR-36, GURGAON",
+      price: "₹1.70 CR",
+      size: "400-900 Sq.Ft.",
+      units: "12+",
       status: "Under Construction",
       type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
     {
@@ -744,48 +744,54 @@ const CommercialPropertiesPage = () => {
     },
     {
       id: 5,
-      title: "M3M MY DEN",
-      location: "SECTOR-67, GURGAON",
-      price: "₹1.37 Cr*",
-      size: "800-1500 Sq.Ft.",
-      units: "5+",
+title: "Fairfox EON",
+      location: "Sector 140A, Noida",
+      price: "₹35 Lacs*",
+      size: "200-500 Sq.Ft.",
+      units: "25+",
       status: "Ready to Move",
       type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
       link: "#"
+
+     
     },
     {
       id: 6,
-      title: "SIGNATURE GLOBAL",
-      location: "SECTOR-36, GURGAON",
-      price: "₹1.70 CR",
-      size: "400-900 Sq.Ft.",
-      units: "12+",
+title: "Group 108 ONE FNG",
+      location: "Sector-142, Noida",
+      price: "₹60 Lacs*",
+      size: "300-800 Sq.Ft.",
+      units: "15+",
       status: "Under Construction",
       type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
       link: "#"
+
+     
     }
   ];
 
   const commercialProperties1 = [
     {
       id: 1,
-      title: "Bhutani Cyberthum",
-      location: "Sector 140A, Noida",
-      price: "₹15 Lacs*",
-      size: "150-400 Sq.Ft.",
-      units: "30+",
+
+
+     title: "SPECTRUM PHASE-2",
+      location: "SECTOR-75, NOIDA",
+      price: "₹53 Lacs*",
+      size: "400-900 Sq.Ft.",
+      units: "12+",
       status: "Under Construction",
       type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
     {
       id: 2,
-      title: "Central",
-      location: "Sector-50, Noida",
-      price: "₹1.13 Cr*",
+    title: "SPECTRUM PHASE 1",
+      location: "SEC-75, NOIDA",
+      price: "₹46.75 Lacs*",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
@@ -795,9 +801,9 @@ const CommercialPropertiesPage = () => {
     },
     {
       id: 3,
-      title: "Dasnac Arc",
-      location: "Sector-72, Noida",
-      price: "₹90 Lacs*",
+     title: "ELDECO ACCLAIM",
+      location: "Sohna Gurgaon",
+      price: "₹3 CR",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
@@ -831,60 +837,66 @@ const CommercialPropertiesPage = () => {
     },
     {
       id: 6,
-      title: "ELDECO ACCLAIM",
-      location: "Sohna Gurgaon",
-      price: "₹3 CR",
+title: "Dasnac Arc",
+      location: "Sector-72, Noida",
+      price: "₹90 Lacs*",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
       type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
+
+      
     },
     {
       id: 7,
-      title: "SPECTRUM PHASE 1",
-      location: "SEC-75, NOIDA",
-      price: "₹46.75 Lacs*",
+ title: "Central",
+      location: "Sector-50, Noida",
+      price: "₹1.13 Cr*",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
       type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
+
+      
     },
     {
       id: 8,
-      title: "SPECTRUM PHASE-2",
-      location: "SECTOR-75, NOIDA",
-      price: "₹53 Lacs*",
-      size: "400-900 Sq.Ft.",
-      units: "12+",
-      status: "Under Construction",
-      type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
-      link: "#"
-    }
-  ];
-
-  const commercialProperties2 = [
-    {
-      id: 1,
-      title: "M3M THE LINE",
-      location: "SECTOR 72, NOIDA",
-      price: "₹65 Lacs*",
+title: "Bhutani Cyberthum",
+      location: "Sector 140A, Noida",
+      price: "₹15 Lacs*",
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
       type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
+
+     
+    }
+  ];
+
+  const commercialProperties2 = [
+    {
+      id: 1,
+      title: "SIGNATURE GLOBAL",
+      location: "SECTOR-36, GURGAON",
+      price: "₹1.70 CR",
+      size: "400-900 Sq.Ft.",
+      units: "12+",
+      status: "Under Construction",
+      type: "Retail",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+      link: "#"
     },
     {
       id: 2,
-      title: "ORION ONE",
-      location: "SECTOR-32, NOIDA",
-      price: "₹36 Lacs*",
+      title: "M3M MY DEN",
+      location: "SECTOR-67, GURGAON",
+      price: "₹1.37 CR",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
@@ -918,27 +930,31 @@ const CommercialPropertiesPage = () => {
     },
     {
       id: 5,
-      title: "M3M MY DEN",
-      location: "SECTOR-67, GURGAON",
-      price: "₹1.37 CR",
+title: "ORION ONE",
+      location: "SECTOR-32, NOIDA",
+      price: "₹36 Lacs*",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
       type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
+
+     
     },
     {
       id: 6,
-      title: "SIGNATURE GLOBAL",
-      location: "SECTOR-36, GURGAON",
-      price: "₹1.70 CR",
-      size: "400-900 Sq.Ft.",
-      units: "12+",
+title: "M3M THE LINE",
+      location: "SECTOR 72, NOIDA",
+      price: "₹65 Lacs*",
+      size: "150-400 Sq.Ft.",
+      units: "30+",
       status: "Under Construction",
       type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
+
+      
     }
   ];
 

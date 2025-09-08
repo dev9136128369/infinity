@@ -17,9 +17,10 @@ const Testimonials = () => {
 
   const carouselTestimonials = [
     {
-      text: "Purchasing my first home with Infinity Realty was an amazing experience. Their team patiently guided me through every step, helping me find the perfect home that fit both my needs and budget.",
-      author: "Rohit Singh",
-      title: "CEO",
+  text: "Infinity Realty helped me achieve my dream of owning a home. Their team’s expertise and dedication made the entire process smooth and stress-free.",
+      author: "Anshul Chauhan",
+      title: "Business Owner",
+
     },
     {
       text: "As a first-time homebuyer, I was thoroughly impressed with Infinity Realty. They helped me find an excellent property and offered invaluable guidance on financing and negotiations throughout the process.",
@@ -27,9 +28,9 @@ const Testimonials = () => {
       title: "Housewife",
     },
     {
-      text: "Infinity Realty helped me achieve my dream of owning a home. Their team’s expertise and dedication made the entire process smooth and stress-free.",
-      author: "Anshul Chauhan",
-      title: "Business Owner",
+      text: "Purchasing my first home with Infinity Realty was an amazing experience. Their team patiently guided me through every step, helping me find the perfect home that fit both my needs and budget.",
+      author: "Rohit Singh",
+      title: "CEO",
     },
   ];
 
@@ -37,10 +38,11 @@ const Testimonials = () => {
 const detailedTestimonials = [
     {
       id: 1,
-      name: "Ritik Bansal",
+      name: "Sanjana Tiwari",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/testimonial-150x150.png",
-      content: "Our experience finding the ideal home was seamless and enjoyable with Infinity Realty. The team’s professionalism and dedication to understanding our requirements helped us secure a property that went beyond our expectations. The craftsmanship and attention to detail in every aspect of the home left a lasting impression. We are thankful for turning our dream home into reality",
+      content: "Investing in real estate can feel overwhelming, but Infinity Realty made the entire process easy and reassuring. Their team’s expertise and ethical approach gave me confidence in my investment. The property I purchased through them promises strong returns and fits perfectly with my long-term plans.",
       rating: 5
+      
     },
     {
       id: 2,
@@ -51,9 +53,9 @@ const detailedTestimonials = [
     },
     {
       id: 3,
-      name: "Sanjana Tiwari",
+     name: "Ritik Bansal",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/testimonial-150x150.png",
-      content: "Investing in real estate can feel overwhelming, but Infinity Realty made the entire process easy and reassuring. Their team’s expertise and ethical approach gave me confidence in my investment. The property I purchased through them promises strong returns and fits perfectly with my long-term plans.",
+      content: "Our experience finding the ideal home was seamless and enjoyable with Infinity Realty. The team’s professionalism and dedication to understanding our requirements helped us secure a property that went beyond our expectations. The craftsmanship and attention to detail in every aspect of the home left a lasting impression. We are thankful for turning our dream home into reality",
       rating: 5
     }
   ];

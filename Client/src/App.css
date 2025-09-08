@@ -721,7 +721,7 @@ body {
 /* ........................Home......................... */
 /* .              HeroSection.................. */
 /* Hero Section Styles */
-.hero-section {
+.hero-sections {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -730,6 +730,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+    background: linear-gradient(135deg, #1f2a58, #eb4917, #fdbb2d);
+
 }
 
 /* Background Slideshow */

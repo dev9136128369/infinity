@@ -44,14 +44,14 @@ const Navbar = () => {
             </span>
             <span className="info-item">
               <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
-              support@infinityrealestate.estate.com
+              support@infinityrealestate.estate
             </span>
           </div>
           <div className="social-icons">
-            <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+            <a href="www.linkedin.com/in/rakesh-kumar-1aba1a57" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faLinkedin} className="social-iconl" />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+            <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faFacebook} className="social-iconf" />
             </a>
             <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>

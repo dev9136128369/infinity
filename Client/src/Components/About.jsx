@@ -1,149 +1,6 @@
-// // AboutUs.jsx
-// import React from 'react';
-
-// const AboutUs = () => {
-//   return (
-//     <div className="about-us-container">
-//     <section class="hero">
-//         <div class="container hero-content">
-//             <div>
-//                 <h1>ABOUT US</h1>
-//                 <p>We Make Your Dream True</p>
-//                 <a href="#overview" class="btn">Explore More</a>
-//             </div>
-//         </div>
-//     </section>
-
-//     <section class="overview" id="overview">
-//         <div class="container">
-//             <div class="overview-content">
-//                 <div class="overview-text">
-//                     <h2>Infinity  AT A GLANCE</h2>
-//                     <p>Infinity  is a prominent and trusted name in the world of real estate. With a rich history of delivering exceptional properties and unparalleled service, this company has earned a reputation for excellence. Known for their commitment to quality, innovation, and customer satisfaction, Infinity has successfully developed a diverse portfolio of residential and commercial projects, catering to a wide range of needs and preferences. Their unwavering dedication to integrity and transparency in all dealings has made them a preferred choice for individuals and businesses alike, seeking to invest in or purchase real estate. Whether it's crafting luxurious homes or creating state-of-the-art commercial spaces, Infinity continues to be a driving force in shaping the real estate landscape, setting new benchmarks for excellence in the industry.</p>
-//                 </div>
-//                 <div class="overview-image">
-//                     <img src="https://Infinityrealty.com/wp-content/uploads/2023/08/Infinityrealty-company-logo-design-1024x491.jpg" alt="Infinity Realty Company Logo"/>
-//                 </div>
-//             </div>
-//         </div>
-//     </section>
-
-//     <section class="achievements">
-//         <div class="container">
-//             <div class="section-title">
-//                 <h2>OUR ACHIEVEMENTS</h2>
-//             </div>
-//             <div class="stats-container">
-//                 <div class="stat-box">
-//                     <div class="stat-number">1,000</div>
-//                     <div class="stat-title">Cr. Worth Properties Sold</div>
-//                 </div>
-//                 <div class="stat-box">
-//                     <div class="stat-number">1,000+</div>
-//                     <div class="stat-title">Happy Customers</div>
-//                 </div>
-//                 <div class="stat-box">
-//                     <div class="stat-number">20+</div>
-//                     <div class="stat-title">Developers</div>
-//                 </div>
-//                 <div class="stat-box">
-//                     <div class="stat-number">50+</div>
-//                     <div class="stat-title">Projects</div>
-//                 </div>
-//                 <div class="stat-box">
-//                     <div class="stat-number">5+</div>
-//                     <div class="stat-title">Offices in India</div>
-//                 </div>
-//             </div>
-//         </div>
-//     </section>
-
-//     <section class="visionaries">
-//         <div class="container">
-//             <div class="section-title">
-//                 <h2>THE VISIONARIES</h2>
-//             </div>
-//             <p class="visionaries-subtitle">The Kingpins of the real estate industry and a luminary for the rising young talent</p>
-            
-//             <div class="leaders-container">
-//                 <div class="leader-card">
-//                     <div class="leader-img">
-//                         <i class="fas fa-user-tie"></i>
-//                     </div>
-//                     <div class="leader-info">
-//                         <h3 class="leader-name">Rajesh Kumar</h3>
-//                         <p class="leader-position">CEO</p>
-//                     </div>
-//                 </div>
-                
-//                 <div class="leader-card">
-//                     <div class="leader-img">
-//                         <i class="fas fa-user-tie"></i>
-//                     </div>
-//                     <div class="leader-info">
-//                         <h3 class="leader-name">Varun Singhal</h3>
-//                         <p class="leader-position">CFO</p>
-//                     </div>
-//                 </div>
-                
-//                 <div class="leader-card">
-//                     <div class="leader-img">
-//                         <i class="fas fa-user-tie"></i>
-//                     </div>
-//                     <div class="leader-info">
-//                         <h3 class="leader-name">Mr. Misra</h3>
-//                         <p class="leader-position">CHRO</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     </section>
-//     </div>
-//   );
-// };
-
-// // Reusable Stat Card Component
-// const StatCard = ({ number, suffix, title }) => {
-//   return (
-//     <div className="stat-card">
-//       <div className="stat-number-wrapper">
-//         <span className="stat-number-prefix"></span>
-//         <span className="stat-number">{number}</span>
-//         <span className="stat-number-suffix">{suffix}</span>
-//       </div>
-//       <div className="stat-title">{title}</div>
-//     </div>
-//   );
-// };
-
-// // Reusable Leader Card Component
-// const LeaderCard = ({ name, position }) => {
-//   return (
-//     <div className="leader-card">
-//       <h3>{name}</h3>
-//       <p>({position})</p>
-//     </div>
-//   );
-// };
-
-// export default AboutUs;
-
-
-
-
-
-
-
-
-
-
 
 
 import React, { useEffect, useRef } from "react";
-
-// ✅ Drop this file into your React app (e.g., src/pages/AboutUsRajlakshmi.jsx)
-// ✅ It renders with its own scoped <style> so you can preview instantly.
-// ✅ Also copy the CSS at the bottom to an external file (aboutus.css) if you prefer.
 
 const AboutUsRajlakshmi = () => {
   const countersRef = useRef([]);
@@ -267,9 +124,11 @@ const AboutUsRajlakshmi = () => {
 
         <div className="team__grid">
           <TeamCard
-            name="Rajesh Kumar"
-            role="Chief Executive Officer"
-            img="https://images.unsplash.com/photo-1603415526960-f7e0328d13d1?q=80&w=800&auto=format&fit=crop"
+ name="Mr. Misra"
+            role="Chief Human Resources Officer"
+            img="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop"
+
+           
           />
           <TeamCard
             name="Varun Singhal"
@@ -277,9 +136,9 @@ const AboutUsRajlakshmi = () => {
             img="https://images.unsplash.com/photo-1546527868-ccb7ee67eabf?q=80&w=800&auto=format&fit=crop"
           />
           <TeamCard
-            name="Mr. Misra"
-            role="Chief Human Resources Officer"
-            img="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop"
+            name="Rajesh Kumar"
+            role="Chief Executive Officer"
+            img="https://images.unsplash.com/photo-1603415526960-f7e0328d13d1?q=80&w=800&auto=format&fit=crop"
           />
         </div>
       </section>

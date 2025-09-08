@@ -7,29 +7,7 @@ import { MdTrendingUp, MdNewReleases, MdMemory } from "react-icons/md"; // for c
 const posts = [
   {
     id: 1,
-    title: "How to choose your first property?",
-    date: "September 4, 2023",
-    comments: "No Comments",
-    excerpt:
-      "When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana-1-1024x512.jpg",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "Why invest in Delhi?",
-    date: "September 4, 2023",
-    comments: "No Comments",
-    excerpt:
-      "India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/aarcity-regency-park-noida-residential-buildings-06qkwhbfc1-1-1024x499.jpg",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Benefits of living in Incuspaze Tower",
+   title: "Benefits of living in Incuspaze Tower",
     date: "September 4, 2023",
     comments: "No Comments",
     excerpt:
@@ -39,8 +17,8 @@ const posts = [
     link: "#",
   },
   {
-    id: 4,
-    title: "Hello world!",
+    id: 2,
+ title: "Hello world!",
     date: "August 24, 2023",
     comments: "1 Comment",
     excerpt:
@@ -48,18 +26,44 @@ const posts = [
     image:
       "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana-1-300x150.jpg",
     link: "#",
+
+  
+  },
+  {
+    id: 3,
+     title: "How to choose your first property?",
+    date: "September 4, 2023",
+    comments: "No Comments",
+    excerpt:
+      "When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.",
+    image:
+      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana-1-1024x512.jpg",
+    link: "#",
+   
+  },
+  {
+    id: 4,
+    title: "Why invest in Delhi?",
+    date: "September 4, 2023",
+    comments: "No Comments",
+    excerpt:
+      "India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.",
+    image:
+      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/aarcity-regency-park-noida-residential-buildings-06qkwhbfc1-1-1024x499.jpg",
+    link: "#",
   },
 ];
 
 const testimonials = [
   {
     id: 1,
-    name: "Sonal Yadav",
+     name: "Amrita Pal",
     role: "CEO",
     image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1602090973258-fotor-20230826175718.png",
+      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1566537005025-fotor-20230826175730.png",
     quote:
-      "I’ve followed real estate blogs for several years, and they’ve been instrumental in guiding my investment journey. From market analysis to practical strategies, the insights helped me grow a profitable portfolio and maximize rental returns.",
+      "Real estate blogs have been a lifesaver during my first home-buying journey. They explained everything in such simple terms that what once felt complicated became easy to understand.",
+   
   },
   {
     id: 2,
@@ -72,12 +76,12 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Amrita Pal",
+    name: "Sonal Yadav",
     role: "CEO",
     image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1566537005025-fotor-20230826175730.png",
+      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1602090973258-fotor-20230826175718.png",
     quote:
-      "Real estate blogs have been a lifesaver during my first home-buying journey. They explained everything in such simple terms that what once felt complicated became easy to understand.",
+      "I’ve followed real estate blogs for several years, and they’ve been instrumental in guiding my investment journey. From market analysis to practical strategies, the insights helped me grow a profitable portfolio and maximize rental returns.",
   },
 ];
 

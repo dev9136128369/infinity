@@ -42,13 +42,13 @@ const Footer = () => {
             </p>
             
             <div className="rr-social-links">
-              <a href="https://www.linkedin.com/company/rajlakshmirealty" target="_blank" rel="noopener noreferrer">
+              <a href="www.linkedin.com/in/rakesh-kumar-1aba1a57" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://www.instagram.com/rajlakshmirealty" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61550263776288" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">

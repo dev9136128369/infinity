@@ -620,11 +620,11 @@ const LeasingPropertiesPage = () => {
   const trendingProperties = [
     {
       id: 1,
-      title: "FAIRFOX EON",
-      location: "SECTOR 140A, NOIDA",
-      price: "₹35 Lacs*",
+      title: "M3M THE CULLINAN",
+      location: "SECTOR-94, NOIDA",
+      price: "₹82 Lacs*",
       type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
       link: "#"
     },
     {
@@ -638,55 +638,30 @@ const LeasingPropertiesPage = () => {
     },
     {
       id: 3,
-      title: "M3M THE CULLINAN",
-      location: "SECTOR-94, NOIDA",
-      price: "₹82 Lacs*",
+  title: "FAIRFOX EON",
+      location: "SECTOR 140A, NOIDA",
+      price: "₹35 Lacs*",
       type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
       link: "#"
+
+
     }
   ];
 
   const affordableProperties = [
     {
       id: 1,
-      title: "M3M THE LINE",
-      location: "SECTOR 72, NOIDA",
-      price: "₹65 Lacs*",
-      type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
-      link: "#"
-    },
-    {
-      id: 2,
-      title: "ORION ONE",
-      location: "SECTOR-32, NOIDA",
-      price: "₹36 Lacs*",
-      type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
-      link: "#"
-    },
-    {
-      id: 3,
-      title: "SIGNATURE GLOBAL",
-      location: "SECTOR-36, GURGAON",
-      price: "₹1.70 CR",
+       title: "DASNAC ARC",
+      location: "SECTOR-72, NOIDA",
+      price: "₹90 Lacs*",
       type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
-     {
-      id: 4,
-      title: "BHUTANI CYBERTHUM",
-      location: "SECTOR 140A, NOIDA",
-      price: "₹15 Lacs*",
-      type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
-      link: "#"
-    },
     {
-      id: 5,
-      title: "CENTRAL",
+      id: 2,
+       title: "CENTRAL",
       location: "SECTOR-50, NOIDA",
       price: "₹1.13 CR",
       type: "Leasing",
@@ -694,24 +669,57 @@ const LeasingPropertiesPage = () => {
       link: "#"
     },
     {
-      id: 6,
-      title: "DASNAC ARC",
-      location: "SECTOR-72, NOIDA",
-      price: "₹90 Lacs*",
+      id: 3,
+   title: "BHUTANI CYBERTHUM",
+      location: "SECTOR 140A, NOIDA",
+      price: "₹15 Lacs*",
+      type: "Leasing",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+      link: "#"
+
+      
+    },
+     {
+      id: 4,
+   title: "SIGNATURE GLOBAL",
+      location: "SECTOR-36, GURGAON",
+      price: "₹1.70 CR",
       type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
+    },
+    {
+      id: 5,
+title: "ORION ONE",
+      location: "SECTOR-32, NOIDA",
+      price: "₹36 Lacs*",
+      type: "Leasing",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+      link: "#"
+
+   
+    },
+    {
+      id: 6,
+title: "M3M THE LINE",
+      location: "SECTOR 72, NOIDA",
+      price: "₹65 Lacs*",
+      type: "Leasing",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+      link: "#"
+
+     
     }
   ];
 
   const primeProperties = [
     {
       id: 1,
-      title: "BHUTANI CYBERTHUM",
-      location: "SECTOR 140A, NOIDA",
-      price: "₹15 Lacs*",
+    title: "DASNAC ARC",
+      location: "SECTOR-72, NOIDA",
+      price: "₹90 Lacs*",
       type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
     {
@@ -725,21 +733,23 @@ const LeasingPropertiesPage = () => {
     },
     {
       id: 3,
-      title: "DASNAC ARC",
-      location: "SECTOR-72, NOIDA",
-      price: "₹90 Lacs*",
+ title: "BHUTANI CYBERTHUM",
+      location: "SECTOR 140A, NOIDA",
+      price: "₹15 Lacs*",
       type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
+
+      
     }
   ];
 
   const testimonials = [
     {
       id: 1,
-      text: "Raj Lakshmi Reality helped me find the perfect leasing property for my business. Their service was exceptional and they understood exactly what I needed.",
-      author: "Rahul Sharma",
-      role: "Business Owner"
+     text: "I'm extremely satisfied with the leasing advice provided by Raj Lakshmi Reality. Their knowledge of the commercial real estate market is impressive.",
+      author: "Vikram Singh",
+      role: "Investor"
     },
     {
       id: 2,
@@ -749,9 +759,11 @@ const LeasingPropertiesPage = () => {
     },
     {
       id: 3,
-      text: "I'm extremely satisfied with the leasing advice provided by Raj Lakshmi Reality. Their knowledge of the commercial real estate market is impressive.",
-      author: "Vikram Singh",
-      role: "Investor"
+text: "Raj Lakshmi Reality helped me find the perfect leasing property for my business. Their service was exceptional and they understood exactly what I needed.",
+      author: "Rahul Sharma",
+      role: "Business Owner"
+
+      
     }
   ];
 
