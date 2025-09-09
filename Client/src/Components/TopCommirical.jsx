@@ -46,7 +46,7 @@ const styles = `
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: var(--background);
+    background-color: #D1F8EF;
   }
 
   .commercial-container {
@@ -57,8 +57,9 @@ const styles = `
 
   /* ================= HERO SECTION ================= */
 .commercial-hero {
-    background: linear-gradient(rgb(26 54 93 / 49%), rgba(26, 54, 93, 0.85)), url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80);
+    // background: linear-gradient(rgb(26 54 93 / 49%), rgba(26, 54, 93, 0.85)), url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80);
     background-size: cover;
+    background: #1E3E62;
     background-position: center;
     color: white;
     padding: 170px 0;
@@ -306,7 +307,7 @@ const styles = `
 
   .property-image {
     position: relative;
-    height: 220px;
+    height: 150px;
     overflow: hidden;
   }
 
@@ -325,7 +326,7 @@ const styles = `
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: var(--accent);
+    background: #d4af37;
     color: var(--primary);
     padding: 5px 12px;
     border-radius: 30px;
@@ -346,7 +347,7 @@ const styles = `
   }
 
   .property-content {
-    padding: 20px;
+    padding: 0px;
   }
 
   .property-title {
@@ -656,8 +657,8 @@ const PropertyCard = ({ property }) => {
     <div className="property-card">
       <div className="property-image">
         <img src={property.image} alt={property.title} />
-        <div className="property-badge">{property.type}</div>
-        <div className="property-price">{property.price}</div>
+        {/* <div className="property-badge">{property.type}</div> */}
+        <div className="property-badge">{property.price}</div>
       </div>
       <div className="property-content">
         <h3 className="property-title">{property.title}</h3>
@@ -665,7 +666,7 @@ const PropertyCard = ({ property }) => {
           <FontAwesomeIcon icon={faMapMarkerAlt} />
           <span>{property.location}</span>
         </div>
-        <div className="property-actions">
+        {/* <div className="property-actions">
           <a href={property.link} className="action-btn">
             <span>View Details</span>
             <FontAwesomeIcon icon={faArrowRight} />
@@ -674,7 +675,7 @@ const PropertyCard = ({ property }) => {
             <FontAwesomeIcon icon={faPhone} />
             <span>Call</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -702,7 +703,7 @@ const CommercialPropertiesPage = () => {
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -714,7 +715,7 @@ const CommercialPropertiesPage = () => {
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -726,7 +727,7 @@ const CommercialPropertiesPage = () => {
       size: "500-1200 Sq.Ft.",
       units: "10+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
       link: "#"
     },
@@ -738,7 +739,7 @@ const CommercialPropertiesPage = () => {
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
     },
@@ -750,7 +751,7 @@ title: "Fairfox EON",
       size: "200-500 Sq.Ft.",
       units: "25+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
       link: "#"
 
@@ -764,7 +765,7 @@ title: "Group 108 ONE FNG",
       size: "300-800 Sq.Ft.",
       units: "15+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
       link: "#"
 
@@ -783,7 +784,7 @@ title: "Group 108 ONE FNG",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -795,7 +796,7 @@ title: "Group 108 ONE FNG",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -807,7 +808,7 @@ title: "Group 108 ONE FNG",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -819,7 +820,7 @@ title: "Group 108 ONE FNG",
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
     },
@@ -831,7 +832,7 @@ title: "Group 108 ONE FNG",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -843,7 +844,7 @@ title: "Dasnac Arc",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
 
@@ -857,7 +858,7 @@ title: "Dasnac Arc",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
 
@@ -871,7 +872,7 @@ title: "Bhutani Cyberthum",
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
 
@@ -888,7 +889,7 @@ title: "Bhutani Cyberthum",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -900,7 +901,7 @@ title: "Bhutani Cyberthum",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -912,7 +913,7 @@ title: "Bhutani Cyberthum",
       size: "400-900 Sq.Ft.",
       units: "12+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -924,7 +925,7 @@ title: "Bhutani Cyberthum",
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
     },
@@ -936,7 +937,7 @@ title: "ORION ONE",
       size: "800-1500 Sq.Ft.",
       units: "5+",
       status: "Ready to Move",
-      type: "Office Space",
+      // type: "Office Space",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
 
@@ -950,7 +951,7 @@ title: "M3M THE LINE",
       size: "150-400 Sq.Ft.",
       units: "30+",
       status: "Under Construction",
-      type: "Retail",
+      // type: "Retail",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
 

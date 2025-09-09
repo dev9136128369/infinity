@@ -4,55 +4,6 @@
 import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { MdTrendingUp, MdNewReleases, MdMemory } from "react-icons/md"; // for categories
-const posts = [
-  {
-    id: 1,
-   title: "Benefits of living in Incuspaze Tower",
-    date: "September 4, 2023",
-    comments: "No Comments",
-    excerpt:
-      "In the past 18 months, the COVID-19 pandemic has significantly reshaped the entire coworking sector, bringing about new ways of working and collaborating. This transformation has also led to the emergence of strategic partnerships between real estate developers and coworking operators, aiming to cater to the evolving needs of businesses and professionals. Industry reports highlight that coworking operators have been actively expanding their portfolios, strengthening their presence across key markets, and positioning themselves as a vital part of the modern real estate ecosystem.",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/8a9ff5838931fd4c0189358e80d954ed_15700_318783_medium.jpg",
-    link: "#",
-  },
-  {
-    id: 2,
- title: "Hello world!",
-    date: "August 24, 2023",
-    comments: "1 Comment",
-    excerpt:
-      "This is your very first post. You can edit it, delete it, or add fresh content to begin your journey. Start creating, sharing your ideas, and building something amazing today!",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana-1-300x150.jpg",
-    link: "#",
-
-  
-  },
-  {
-    id: 3,
-     title: "How to choose your first property?",
-    date: "September 4, 2023",
-    comments: "No Comments",
-    excerpt:
-      "When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/fgulshan-ikebana-1-1024x512.jpg",
-    link: "#",
-   
-  },
-  {
-    id: 4,
-    title: "Why invest in Delhi?",
-    date: "September 4, 2023",
-    comments: "No Comments",
-    excerpt:
-      "India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.",
-    image:
-      "https://rajlakshmirealty.com/wp-content/uploads/2023/08/aarcity-regency-park-noida-residential-buildings-06qkwhbfc1-1-1024x499.jpg",
-    link: "#",
-  },
-];
 
 const testimonials = [
   {
@@ -117,36 +68,84 @@ export default function BlogPage() {
         </svg>
       </header>
 
+
+    <section className="side-section">
+      <div className="side-content">
+        <h2>Benefits of living in Incuspaze Tower</h2>
+        <p>
+          In the past 18 months, the COVID-19 pandemic has significantly reshaped the entire coworking sector, bringing about new ways of working and collaborating. This transformation has also led to the emergence of strategic partnerships between real estate developers and coworking operators, aiming to cater to the evolving needs of businesses and professionals. Industry reports highlight that coworking operators have been actively expanding their portfolios, strengthening their presence across key markets, and positioning themselves as a vital part of the modern real estate ecosystem.
+        </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+
+      <div className="side-image">
+        <img src="/assets/realestate.jpg" alt="Real Estate" />
+      </div>
+    </section>
+
+
+
+
+  <section className="side-section">
+        <div className="side-image">
+        <img src="/assets/realestate.jpg" alt="Real Estate" />
+      </div>
+      <div className="side-content">
+        <h2>Hello world!</h2>
+        <p>
+         This is your very first post. You can edit it, delete it, or add fresh content to begin your journey. Start creating, sharing your ideas, and building something amazing today! </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+
+  
+    </section>
+
+
+
+
+
+ <section className="side-section">
+      
+      <div className="side-content">
+        <h2>How to choose your first property?</h2>
+        <p>
+         When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.  </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+
+    <div className="side-image">
+        <img src="/assets/realestate.jpg" alt="Real Estate" />
+      </div>
+    </section>
+
+
+
+
+
+
+<section className="side-section">
+        <div className="side-image">
+        <img src="/assets/realestate.jpg" alt="Real Estate" />
+      </div>
+      <div className="side-content">
+        <h2>Why invest in Delhi?</h2>
+        <p>
+        India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.    </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+
+  
+    </section>
+
+
+
       {/* POSTS GRID */}
       <section className="bp-container">
-        <section className="bp-grid" aria-label="Blog posts">
-          {posts.map((p) => (
-            <article className="bp-card" key={p.id} aria-labelledby={`title-${p.id}`}>
-              <a className="bp-card__media" href={p.link} target="_blank" rel="noreferrer">
-                <img src={p.image} alt={p.title} loading="lazy" />
-              </a>
-
-              <div className="bp-card__body">
-                <h2 id={`title-${p.id}`} className="bp-card__title">
-                  <a href={p.link} target="_blank" rel="noreferrer">
-                    {p.title}
-                  </a>
-                </h2>
-                <div className="bp-meta">
-                  <span className="bp-date">{p.date}</span>
-                  <span className="bp-dot">•</span>
-                  <span className="bp-comments">{p.comments}</span>
-                </div>
-                <p className="bp-excerpt">{p.excerpt}</p>
-                <div className="bp-actions">
-                  <a className="bp-btn" href={p.link} target="_blank" rel="noreferrer">
-                    Read More »
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </section>
+       
 
         {/* ABOUT / CATEGORIES / FOLLOW US strip */}
        <section className="bp-info-strip" aria-label="Blog information">
@@ -182,9 +181,9 @@ export default function BlogPage() {
       <a href="#" className="bp-social" aria-label="Instagram">
         <FaInstagram size={16} /> Instagram
       </a>
-      <a href="#" className="bp-social" aria-label="Twitter">
+      {/* <a href="#" className="bp-social" aria-label="Twitter">
         <FaTwitter size={16} /> Twitter
-      </a>
+      </a> */}
     </div>
   </div>
 </section>

@@ -34,7 +34,7 @@ const styles = `
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: var(--background);
+    background-color: #D1F8EF;
   }
 
   .container {
@@ -504,8 +504,8 @@ const PropertyCard = ({ property }) => {
     <div className="property-card">
       <div className="property-image">
         <img src={property.image} alt={property.title} />
-        <div className="property-badge">{property.type}</div>
-        <div className="property-price">{property.price}</div>
+        {/* <div className="property-badge">{property.type}</div> */}
+        <div className="property-badge">{property.price}</div>
       </div>
       <div className="property-content">
         <h3 className="property-title">{property.title}</h3>
@@ -513,7 +513,7 @@ const PropertyCard = ({ property }) => {
           <FontAwesomeIcon icon={faMapMarkerAlt} />
           <span>{property.location}</span>
         </div>
-        <div className="property-actions">
+        {/* <div className="property-actions">
           <a href={property.link} className="action-btn">
             <span>View Details</span>
             <FontAwesomeIcon icon={faArrowRight} />
@@ -522,7 +522,7 @@ const PropertyCard = ({ property }) => {
             <FontAwesomeIcon icon={faPhone} />
             <span>Call</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -623,7 +623,7 @@ const LeasingPropertiesPage = () => {
       title: "M3M THE CULLINAN",
       location: "SECTOR-94, NOIDA",
       price: "₹82 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
       link: "#"
     },
@@ -632,7 +632,7 @@ const LeasingPropertiesPage = () => {
       title: "GROUP 108 ONE FNG",
       location: "SECTOR-142, NOIDA",
       price: "₹60 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
       link: "#"
     },
@@ -641,7 +641,7 @@ const LeasingPropertiesPage = () => {
   title: "FAIRFOX EON",
       location: "SECTOR 140A, NOIDA",
       price: "₹35 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
       link: "#"
 
@@ -655,7 +655,7 @@ const LeasingPropertiesPage = () => {
        title: "DASNAC ARC",
       location: "SECTOR-72, NOIDA",
       price: "₹90 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -664,7 +664,7 @@ const LeasingPropertiesPage = () => {
        title: "CENTRAL",
       location: "SECTOR-50, NOIDA",
       price: "₹1.13 CR",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -673,7 +673,7 @@ const LeasingPropertiesPage = () => {
    title: "BHUTANI CYBERTHUM",
       location: "SECTOR 140A, NOIDA",
       price: "₹15 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
 
@@ -684,7 +684,7 @@ const LeasingPropertiesPage = () => {
    title: "SIGNATURE GLOBAL",
       location: "SECTOR-36, GURGAON",
       price: "₹1.70 CR",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -693,7 +693,7 @@ const LeasingPropertiesPage = () => {
 title: "ORION ONE",
       location: "SECTOR-32, NOIDA",
       price: "₹36 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
 
@@ -704,7 +704,7 @@ title: "ORION ONE",
 title: "M3M THE LINE",
       location: "SECTOR 72, NOIDA",
       price: "₹65 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
 
@@ -718,7 +718,7 @@ title: "M3M THE LINE",
     title: "DASNAC ARC",
       location: "SECTOR-72, NOIDA",
       price: "₹90 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
       link: "#"
     },
@@ -727,7 +727,7 @@ title: "M3M THE LINE",
       title: "CENTRAL",
       location: "SECTOR-50, NOIDA",
       price: "₹1.13 Cr*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
       link: "#"
     },
@@ -736,7 +736,7 @@ title: "M3M THE LINE",
  title: "BHUTANI CYBERTHUM",
       location: "SECTOR 140A, NOIDA",
       price: "₹15 Lacs*",
-      type: "Leasing",
+      // type: "Leasing",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
       link: "#"
 

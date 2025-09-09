@@ -111,120 +111,109 @@ const detailedTestimonials = [
       </section>
 
       {/* Testimonials Grid */}
-      <section className="container">
-        <div className="testimonial-grid">
-          {/* Testimonial 1 */}
-          <div className="testimonial-card">
-            <div className="testimonial-header">
-              <div className="testimonial-image">
-                <img
-                  src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1566537005025-fotor-20230826175730.png"
-                  alt="Ankita Yadav"
-                />
-              </div>
-              <div className="testimonial-info">
-                <div className="testimonial-name">Ankita Yadav</div>
-                <div className="testimonial-handle">@ankitaaa</div>
-                <div className="testimonial-rating">
-                  <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStarHalfAlt />
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-content">
-              <p className="testimonial-text">
-              My first home purchase was a breeze with Infinity’s support. They made the process simple and helped me secure a home that I absolutely love, all within my budget.
-              </p>
-              <div className="testimonial-icon">
-                <FaFacebook />
+      <section className="testimonials-section">
+      <h2 className="testimonials-title">What Our Clients Say</h2>
+      <div className="testimonial-grid">
+        
+        {/* Testimonial 1 */}
+        <div className="testimonial-card">
+          <div className="testimonial-profile">
+            <img
+              src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1566537005025-fotor-20230826175730.png"
+              alt="Ankita Yadav"
+            />
+            <div>
+              <h3 className="testimonial-name">Ankita Yadav</h3>
+              <p className="testimonial-handle">@ankitaaa</p>
+              <div className="testimonial-rating">
+                <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStarHalfAlt />
               </div>
             </div>
           </div>
-
-          {/* Testimonial 2 */}
-          <div className="testimonial-card">
-            <div className="testimonial-header">
-              <div className="testimonial-image">
-                <img
-                  src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1602090973258-fotor-20230826175718.png"
-                  alt="Sanjana Tiwari"
-                />
-              </div>
-              <div className="testimonial-info">
-                <div className="testimonial-name">Sanjana Tiwari</div>
-                <div className="testimonial-handle">@sanjanaaa</div>
-                <div className="testimonial-rating">
-                  <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-content">
-              <p className="testimonial-text">
-              Thanks to Infinity, selling my property was quick and hassle-free. Their market knowledge and marketing approach truly stood out.
-              </p>
-              <div className="testimonial-icon">
-                <FaInstagram />
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 3 */}
-          <div className="testimonial-card">
-            <div className="testimonial-header">
-              <div className="testimonial-image">
-                <img
-                  src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1517679645415-fotor-20230826175740.png"
-                  alt="Amrit Pal"
-                />
-              </div>
-              <div className="testimonial-info">
-                <div className="testimonial-name">Amrit Pal</div>
-                <div className="testimonial-handle">@amritpal</div>
-                <div className="testimonial-rating">
-                  <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-content">
-              <p className="testimonial-text">
-              Finding the right commercial space was easy with Infinity. They understood my requirements and negotiated a great deal for me
-              </p>
-              <div className="testimonial-icon">
-                <FaFacebook />
-              </div>
-            </div>
+          <p className="testimonial-text">
+            My first home purchase was a breeze with Infinity’s support. They
+            made the process simple and helped me secure a home that I absolutely
+            love, all within my budget.
+          </p>
+          <div className="testimonial-social">
+            <FaFacebook />
           </div>
         </div>
-      </section>
+
+        {/* Testimonial 2 */}
+        <div className="testimonial-card">
+          <div className="testimonial-profile">
+            <img
+              src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1602090973258-fotor-20230826175718.png"
+              alt="Sanjana Tiwari"
+            />
+            <div>
+              <h3 className="testimonial-name">Sanjana Tiwari</h3>
+              <p className="testimonial-handle">@sanjanaaa</p>
+              <div className="testimonial-rating">
+                <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
+              </div>
+            </div>
+          </div>
+          <p className="testimonial-text">
+            Thanks to Infinity, selling my property was quick and hassle-free.
+            Their market knowledge and marketing approach truly stood out.
+          </p>
+          <div className="testimonial-social">
+            <FaInstagram />
+          </div>
+        </div>
+
+        {/* Testimonial 3 */}
+        <div className="testimonial-card">
+          <div className="testimonial-profile">
+            <img
+              src="https://rajlakshmirealty.com/wp-content/uploads/2023/08/1517679645415-fotor-20230826175740.png"
+              alt="Amrit Pal"
+            />
+            <div>
+              <h3 className="testimonial-name">Amrit Pal</h3>
+              <p className="testimonial-handle">@amritpal</p>
+              <div className="testimonial-rating">
+                <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
+              </div>
+            </div>
+          </div>
+          <p className="testimonial-text">
+            Finding the right commercial space was easy with Infinity. They
+            understood my requirements and negotiated a great deal for me.
+          </p>
+          <div className="testimonial-social">
+            <FaFacebook />
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
  {/* Detailed Testimonials Grid */}
-       <section className="detailed-testimonials">
-         <div className="container">
-           <div className="testimonials-grid">
-             {detailedTestimonials.map(testimonial => (
-              <div key={testimonial.id} className="testimonial-item">
-                <div className="testimonial-image">
-                  <img src={testimonial.image} alt={testimonial.name} />
-                </div>
-                <div className="testimonial-icons">
-                  <i className="fas fa-quote-left"></i>
-                </div>
-                <div className="testimonial-content">
-                  <p>{testimonial.content}</p>
-                </div>
-                <div className="testimonial-icons">
-                  <i className="fas fa-quote-right"></i>
-                </div>
-                <div className="star-rating">
-                  {renderStars(testimonial.rating)}
-                </div>
-                <h3 className="testimonial-name">{testimonial.name}</h3>
-              </div>
-            ))}
+  <section className="luxury-testimonials">
+  <div className="container">
+    <h2 className="section-title">What Our Clients Say</h2>
+    <div className="timeline">
+      {detailedTestimonials.map((testimonial, index) => (
+        <div key={testimonial.id} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
+          <div className="content-box">
+            <div className="client-info">
+              <img src={testimonial.image} alt={testimonial.name} className="client-img" />
+              <h3>{testimonial.name}</h3>
+            </div>
+            <p className="testimonial-text">❝ {testimonial.content} ❞</p>
+            <div className="star-rating">
+              {renderStars(testimonial.rating)}
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
 
       {/* First-time Buyers Section */}

@@ -205,7 +205,7 @@ export default AboutUsRajlakshmi;
 // =====================================================
 const css = `
 :root{
-  --bg:#e9ecef;         
+  --bg:#D1F8EF;         
   --card:#121a2b;        
   --ink:#f6f7fb;         
   --muted:#c8cfda;       
@@ -251,7 +251,7 @@ linear-gradient(180deg, #0b1020 0%, #0d1321 100%)}
 .logo-card img{width:100%;height:100%;aspect-ratio:16/9;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
 
 /* Stats */
-.stats{padding:28px 0 64px;background:linear-gradient(180deg, rgba(168,218,220,.04), transparent)}
+.stats{padding:28px 0 64px;background:#D1F8EF;}
 .stats__grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:22px}
 .stat{background:var(--card);padding:20px;border-radius:16px;text-align:center;box-shadow:var(--shadow);outline:1px solid rgba(255,255,255,.05);transition:transform .2s ease}
 .stat:hover{transform:translateY(-3px)}

@@ -34,7 +34,7 @@ const styles = `
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: var(--background);
+    background-color: #D1F8EF;
   }
 
   .container {
@@ -171,7 +171,7 @@ const styles = `
 
   .property-image {
     position: relative;
-    height: 220px;
+    height: 150px;
     overflow: hidden;
   }
 
@@ -190,7 +190,7 @@ const styles = `
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: var(--accent);
+    background-color: #d4af37;
     color: var(--primary);
     padding: 5px 12px;
     border-radius: 30px;
@@ -211,7 +211,7 @@ const styles = `
   }
 
   .property-content {
-    padding: 20px;
+    padding: 0px;
   }
 
   .property-title {
@@ -504,8 +504,8 @@ const PropertyCard = ({ property }) => {
     <div className="property-card">
       <div className="property-image">
         <img src={property.image} alt={property.title} />
-        <div className="property-badge">{property.type}</div>
-        <div className="property-price">{property.price}</div>
+        {/* <div className="property-badge">{property.type}</div> */}
+        <div className="property-badge">{property.price}</div>
       </div>
       <div className="property-content">
         <h3 className="property-title">{property.title}</h3>
@@ -513,7 +513,7 @@ const PropertyCard = ({ property }) => {
           <FontAwesomeIcon icon={faMapMarkerAlt} />
           <span>{property.location}</span>
         </div>
-        <div className="property-actions">
+        {/* <div className="property-actions">
           <a href={property.link} className="action-btn">
             <span>View Details</span>
             <FontAwesomeIcon icon={faArrowRight} />
@@ -522,7 +522,7 @@ const PropertyCard = ({ property }) => {
             <FontAwesomeIcon icon={faPhone} />
             <span>Call</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -623,7 +623,7 @@ const ResidentialPropertiesPage = () => {
      title: "CIVITECH STRINGS",
       location: "SECTOR-12, NOIDA",
       price: "₹44 Lac",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
     },
@@ -632,7 +632,7 @@ const ResidentialPropertiesPage = () => {
        title: "COUNTY 107",
       location: "SECTOR 107, NOIDA",
       price: "₹3.13 CR*",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
       link: "#"
     },
@@ -641,7 +641,7 @@ const ResidentialPropertiesPage = () => {
            title: "EUREKA PARK",
       location: "SECTOR 150, NOIDA",
       price: "₹1.05 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
       link: "#"
     },
@@ -652,7 +652,7 @@ const ResidentialPropertiesPage = () => {
       title: "M3M THE CULLINAN",
       location: "SECTOR 94, NOIDA",
       price: "₹5.88 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
     },
@@ -661,7 +661,7 @@ const ResidentialPropertiesPage = () => {
       title: "GODREJ TROPICAL ISLE",
       location: "SECTOR 146, NOIDA",
       price: "₹3.75 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
       link: "#"
     },
@@ -670,7 +670,7 @@ const ResidentialPropertiesPage = () => {
 title: "GODREJ WOOD",
       location: "SECTOR 43, NOIDA",
       price: "₹ 1.35 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
       link: "#"
 
@@ -684,7 +684,7 @@ title: "GODREJ WOOD",
  title: "STELLAR ONE PHASE 2",
       location: "SECTOR 1, NOIDA",
       price: "₹ 1.26 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
       link: "#"
 
@@ -695,7 +695,7 @@ title: "GODREJ WOOD",
  title: "MAX STATES",
       location: "Sec 128, Noida",
       price: "₹ 8.50 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
       link: "#"
 
@@ -706,7 +706,7 @@ title: "GODREJ WOOD",
   title: "IVY COUNTY",
       location: "Sec 75, Noida",
       price: "₹ 1.50 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
       link: "#"
 
@@ -722,7 +722,7 @@ title: "GODREJ WOOD",
    title: "SIGNATURE GLOBAL",
       location: "SECTOR 36, GURGAON",
       price: "₹1.70 CR*",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
       link: "#"
     },
@@ -731,7 +731,7 @@ title: "GODREJ WOOD",
    title: "CRC JOYOUS",
       location: "TECHZONE IV, GREATER NOIDA WEST",
       price: "₹59.90 Lacs*",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
       link: "#"
     },
@@ -740,7 +740,7 @@ title: "GODREJ WOOD",
       title: "ELDECO ACCLAIM",
       location: "Sohna Gurgaon",
       price: "₹ 3 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
       link: "#"
     },
@@ -749,7 +749,7 @@ title: "GODREJ WOOD",
   title: "EMAAR DIGI HOMES",
       location: "SECTOR 62 GURGAON",
       price: "₹ 1.7 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
       link: "#"
 
@@ -760,7 +760,7 @@ title: "GODREJ WOOD",
   title: "BIRLA NAVYA",
       location: "SECTOR 63 A, GURGAON",
       price: "₹ 1.3 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-13.jpg",
       link: "#"
 
@@ -774,7 +774,7 @@ title: "GODREJ WOOD",
        title: "SIGNATURE GLOBAL",
       location: "SECTOR-36, GURGAON",
       price: "₹ 1.70 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/gurgaon.jpg",
       link: "#"
     },
@@ -783,7 +783,7 @@ title: "GODREJ WOOD",
       title: "M3M MY DEN",
       location: "SECTOR-67, GURGAON",
       price: "₹ 1.37 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/best-places-to-live-in-pune-800x533-1-768x512.jpg",
       link: "#"
     },
@@ -792,7 +792,7 @@ title: "GODREJ WOOD",
  title: "BESTECH CENTRA",
       location: "SECTOR-88, GURGAON",
       price: "₹ 2.77 CR",
-      type: "Residential",
+      // type: "Residential",
       image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1388388393Neotown-Dec-2013-night-view-1024x577-1-768x433.jpg",
       link: "#"
 

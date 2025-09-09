@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faChevronLeft, faChevronRight, faMapMarkerAlt, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import StatsSection from './StatsSection';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 import noidaImage from '/Images/noida.jpg';
@@ -11,6 +16,7 @@ import gurgaonImage from '/Images/gurgaon.jpg';
 import dubaiImage from '/Images/dubai.jpg';
 // import noidaImage from '/Images/noida.png';
 const home = () => {
+    const width = useWindowWidth();
     const [currentSlide, setCurrentSlide] = useState(0);
   const [loadedImages, setLoadedImages] = useState({});
 
@@ -20,49 +26,56 @@ const home = () => {
     "/Images/HomeBanner3.jpg",
     "/Images/heros.jpg",
     "/Images/bildings.jpg",
-    // "https://rajlakshmirealty.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-26-at-14.57.00.jpeg"
+    "/Images/herose.jpg"
   ];
 
 
   const properties = [
     {
       id: 1,
-       title: "County 107",
+      title: "County 107",
       location: "SECTOR 107, NOIDA",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/county-107.jpg",
+      image: "/Images/County107.jpg",
       link: "#"
-     
     },
     {
       id: 2,
-       title: "Godrej Wood",
+      title: "Godrej Wood",
       location: "Sector 43, Noida",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/godrej-woods.jpg",
+      image: "/Images/GodrejWood.jpg",
       link: "#"
-   
     },
     {
       id: 3,
       title: "THE FLAGSHIP",
       location: "Sector 140A, Noida Expressway",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/CRC1C-1024x576.webp",
+      image: "/Images/THEFLAGSHIP.jpg",
       link: "#"
     },
     {
       id: 4,
-        title: "CRC JOYOUS",
+      title: "CRC JOYOUS",
       location: "Techzone 1V, Greater Noida West",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/joyous-1024x614.jpg",
+      image: "/Images/CRCJOYOUS.jpg",
       link: "#"
     },
     {
       id: 5,
-       title: "Tata Eureka",
+      title: "Tata Eureka",
       location: "Sector 150, Noida, UP",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/09/tata1.webp",
+      image: "/Images/TataEureka.jpg",
+      link: "#"
+    },
+       {
+      id: 6,
+      title: "CRC JOYOUS",
+      location: "Greater Noida West",
+      image: "/Images/crcpark.jpg",
       link: "#"
     }
   ];
+
+ 
 
 
 
@@ -202,7 +215,7 @@ const home = () => {
        title: "How to choose your first Property?",
       description: "There are many things to consider before purchasing your first property.",
       link: "https://rajlakshmirealty.com/1589-2/",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60",
+      image: "/Images/home.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
       readTime: "5 min read"
@@ -213,7 +226,7 @@ const home = () => {
       title: "Why Invest in Delhi?",
       description: "Delhi is one of the best City to live in India.",
       link: "https://rajlakshmirealty.com/why-invest-in-delhi/",
-      image: "/Images/blog2.jpg",
+      image: "/Images/Invester.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
       readTime: "4 min read"
@@ -223,7 +236,7 @@ const home = () => {
       title: "Benefits of living in Incuspaze Tower?",
       description: "INCUSPAZE TOWER is a project With the luxurious residential development,",
       link: "#",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=60",
+      image: "/Images/livingTower.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
       readTime: "3 min read"
@@ -284,7 +297,7 @@ const home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 9000);
     
     return () => clearInterval(interval);
   }, []);
@@ -318,10 +331,332 @@ const home = () => {
   }, []);
 
 
+ const heroSlides = [
+  {
+    title: " Infinity Real Estate – Trusted Homes & Smart Investments",
+    description:
+      "Infinity Real Estate connects investors with prime commercial spaces and high-return opportunities.",
+    features: [
+  " Premium Business & Investment Properties",
+  " Data-Driven Market Insights",
+  " End-to-End Transaction Expertise",
+  " RERA-Compliant & Transparent Deals",
+  " High ROI Opportunities for Investors",
+],
+    image: "/Images/BlueBildings.jpeg",
+  },
+  {
+  title: " Modern Apartments for Every Lifestyle",
+description: "From budget-friendly 2BHKs to luxury penthouses, Infinity delivers homes built for comfort and value.",
+features: [
+  " Prime Locations Near Business Hubs",
+  " Flexible Ownership & Loan Support",
+  " Transparent & Verified Projects",
+],
+       image: "/Images/bildings.jpeg",
+
+  },
+  {
+  title: " Luxury Residences, Smart Returns",
+  description:
+    "Invest in premium apartments designed for lifestyle and value.",
+  features: [
+    " Modern Amenities & Architecture",
+    " High Appreciation Potential",
+    " Flexible Ownership Options",
+  ],
+    image:
+      "/Images/HomeBanner2.jpg",
+  },
+];
+
+
+const propertiesr = [
+    {
+      id: 1,
+      title: "M3M THE CULLINAN",
+      location: "Sector 94, Noida",
+      price: "₹ 5.88 CR",
+      image: "/Images/M3M.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 2,
+      title: "STELLAR ONE PHASE 2",
+      location: "Sector 1, Noida",
+      price: "₹ 1.26 CR",
+      image: "/Images/Signater.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 3,
+      title: "GODREJ TROPICAL ISLE",
+      location: "Sector 146, Noida",
+      price: "₹ 3.75 CR",
+      image: "/Images/Trapical.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 4,
+      title: "IVY COUNTY",
+      location: "Sector 75, Noida",
+      price: "₹ 1.50 CR",
+      image: "/Images/IVY.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 5,
+      title: "MAX STATES",
+      location: "Sector 128, Noida",
+      price: "₹ 8.50 CR",
+      image: "/Images/MAX.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 6,
+      title: "ELDECO ACCLAIM",
+      location: "Sohna Gurgaon",
+      price: "₹ 3.00 CR",
+      image: "/Images/Eldeco.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 7,
+      title: "GODREJ WOODS",
+      location: "Sector 43, Noida",
+      price: "₹ 1.35 CR",
+      image: "/Images/Wood.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 8,
+      title: "CRC JOYOUS",
+      location: "Techzone IV, Greater Noida West",
+      price: "₹ 59.90 Lacs",
+      image: "/Images/CRC.jpeg",
+      specs: [""],
+      link: "/"
+
+    },
+    {
+      id: 9,
+      title: "EUREKA PARK",
+      location: "Sector 150, Noida",
+      price: "₹ 1.05 CR",
+      image: "/Images/Erukapark.jpeg",
+      specs: [""],
+      link: "/"
+
+    }
+  ];
+
+
+
+
+
+
+
+// ✅ Custom Hook for window width
+function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return width;
+}
+
+
+
+
+
+
+
   return (
     <div>
-        <section className="hero-sections">
-      {/* Background Slideshow */}
+        <section className="hero-sectionr">
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={1}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+      >
+        {heroSlides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                height: width < 768 ? "70vh" : "100vh",
+                width: "100%",
+                position: "relative",
+              }}
+            >
+              {/* Overlay */}
+              <div
+                style={{
+                  background: "rgba(0,0,0,0.5)",
+                  position: "absolute",
+                  inset: 0,
+                }}
+              ></div>
+
+              {/* Content */}
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: 2,
+                  padding: width < 768 ? "20px" : "80px",
+                  paddingTop: width < 768 ? "13rem" : "10rem",
+                }}
+              >
+                <h1
+                  style={{
+                    color: "#fff",
+                    fontSize: width < 768 ? "2rem" : "4rem",
+                    fontWeight: "700",
+                    lineHeight: 1.2,
+                  }}
+                >
+                  {slide.title}
+                </h1>
+                <p
+                  style={{
+                    color: "#ddd",
+                    maxWidth: "600px",
+                    fontSize: width < 768 ? "1rem" : "2rem",
+                    fontWeight: "600",
+                    marginTop: "1rem",
+                  }}
+                >
+                  {slide.description}
+                </p>
+                <ul
+                  style={{
+                    color: "#fff",
+                    paddingTop: "1rem",
+                    fontSize: width < 768 ? "1rem" : "1.2rem",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {slide.features.map((feature, i) => (
+                    <li key={i}>✔ {feature}</li>
+                  ))}
+                </ul>
+                <a
+                  href="/Contact"
+                  style={{
+                    display: "inline-block",
+                    padding: width < 768 ? "10px 18px" : "12px 24px",
+                    background: "#d4af37",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "6px",
+                    marginTop: "20px",
+                    fontSize: width < 768 ? "0.9rem" : "1rem",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.background = "#b8962d")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.background = "#d4af37")
+                  }
+                >
+                  Get started
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+
+      {/* Experience Section */}
+      <section className="experience-section">
+        <div className="container">
+          <div className="spacer-y">
+            <div className="row g-4 justify-content-between">
+              
+            </div>
+            <div className="col-lg-12 text-align-center">
+                <h2>5+ Years <span className="fw-normal">of Experience in Delivering Luxury With Excellence</span></h2>
+              </div>
+              <div className="col-lg-12 text-align-center">
+                <p className="mb-4">
+                 Infinity Realty delivers strategic opportunities, expert market insights, and seamless transactions to maximize returns and business growth. With proven expertise, we help clients secure premium properties with precision and confidence.
+                </p>
+              
+              </div>
+          </div>
+          
+          {/* Partner Logos Slider */}
+            <div className="partners-carousel">
+          <div className="carousel-container">
+            <div 
+              className="carousel-track"
+              style={{ 
+                transform: `translateX(-${currentSlide * (100 / slidesToShow())}%)`,
+                gridTemplateColumns: `repeat(${partners.length}, calc(${100 / slidesToShow()}% - ${(10 * (slidesToShow() - 1)) / slidesToShow()}px))`
+              }}
+            >
+              {partners.map((partner, index) => (
+                <div key={partner.id} className="partner-slide">
+                  <div className="partner-logo">
+                    <img 
+                      src={partner.image} 
+                      alt={partner.name}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button className="carousel-nav carousel-prev" onClick={prevSlide}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className="carousel-nav carousel-next" onClick={nextSlide}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+
+          {/* Pagination Dots */}
+          <div className="carousel-pagination">
+            {Array.from({ length: Math.ceil(partners.length / slidesToShow()) }).map((_, index) => (
+              <button
+                key={index}
+                className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
+                onClick={() => goToSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        {/* </div> */}
+      </div>
+        </div>
+      </section>
+        {/* <section className="hero-sections">
       <div className="hero-background">
         {backgroundImages.map((image, index) => (
           <div 
@@ -333,13 +668,10 @@ const home = () => {
         <div className="hero-overlay"></div>
       </div>
 
-      {/* Content */}
       <div className="hero-container">
         <div className="hero-content">
-          {/* <h1 className="hero-title">Lets Discover your dream properties</h1> */}
           <h1 className="hero-title">Discover Your Dream Property Today </h1>
           
-          {/* Search Form */}
           <form className="hero-search-form" role="search">
             <div className="search-container">
               <label htmlFor="property-search" className="screen-reader-only">Search properties</label>
@@ -355,7 +687,6 @@ const home = () => {
             </div>
           </form>
           
-          {/* Property Types */}
           <div className="property-types">
             <p>
               <a href="/ResidentialProperty">RESIDENTIAL</a> / 
@@ -364,7 +695,6 @@ const home = () => {
             </p>
           </div>
           
-          {/* Call to Action Buttons */}
           <div className="hero-buttons">
             <div className="button-wrapper">
               <a href="#" className="cta-button explore-button">
@@ -379,7 +709,7 @@ const home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
        {/* <section className="exclusive-projects-section">
       <div className="container">
         <div className="exclusive-projects-content">
@@ -392,22 +722,20 @@ const home = () => {
     </section> */}
 
 
-    <section className="property-slider-section">
-      <div className="container">
+     <section className="property-slider-section">
+      {/* <div className="container"> */}
         <div className="slider-header">
           <h2 className="slider-title">EXCLUSIVE PROJECTS</h2>
-          {/* <p className="slider-subtitle">Most Acclaimed Properties on Rajlakshmi Realty</p> */}
           <p className="slider-subtitle">Discover the Finest Developments by Infinity</p>
-
         </div>
 
         <div className="property-slider">
           <div className="slider-container">
             <div 
               className="slider-track"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              style={{ transform: `translateX(-${currentSlide * (100 / properties.length)}%)` }}
             >
-              {properties.map((property, index) => (
+              {properties.map((property) => (
                 <div key={property.id} className="slides">
                   <div className="property-card">
                     <div className="property-image">
@@ -454,200 +782,73 @@ const home = () => {
             ))}
           </div>
         </div>
-
-        <div className="slider-footer">
-          <a href="#all-properties" className="view-all-btn">
-            View All Properties
-          </a>
-        </div>
-      </div>
+      {/* </div> */}
     </section>
 
 
-
   
-<section>
-      <div className="services-section">
-      <div className="slider-header">
-          {/* <h2 className="slider-title">TOP RESIDENTIAL PROPERTY</h2> */}
-          <h2 className="slider-title">Best Residential Spaces in India</h2>
+ <section className="residential-properties-new">
+      <div className="contain">
+        <div className="section-header-new">
+          <h2 className="section-title-new">Premium Residential Spaces</h2>
+          <p className="section-subtitle-new">Discover India's most exquisite residential properties</p>
+          <div className="title-decoration"></div>
+        </div>
+{/* 
+        <div className="properties-filter">
+          <button className="filter-btn active">All Projects</button>
+          <button className="filter-btn">Ready to Move</button>
+          <button className="filter-btn">Under Construction</button>
+          <button className="filter-btn">New Launch</button>
+        </div> */}
 
-          {/* <p className="slider-subtitle">Searching for your sweet Home? Have a look at our Top Residential Projects in India</p> */}
-          <p className="slider-subtitle">Explore the most acclaimed residential developments across India</p>
-        
+        <div className="properties-grid-new">
+          {propertiesr.map(property => (
+            <div key={property.id} className="property-card-new">
+              <div className="property-image-new">
+                <img src={property.image} alt={property.title} />
+                <div className="property-badge">Featured</div>
+                <button className="wishlist-btn">
+                  <i className="fas fa-heart"></i>
+                </button>
+              </div>
+              
+              <div className="property-content-new">
+                <div className="property-header">
+                  <h3 className="property-title-new">{property.title}</h3>
+                  <p className="property-location-new">
+                    <i className="fas fa-map-marker-alt"></i>
+                    {property.location}
+                  </p>
+                </div>
+                
+                {/* <div className="property-specs">
+                  {property.specs.map((spec, index) => (
+                    <span key={index} className="spec-tag">{spec}</span>
+                  ))}
+                </div> */}
+                
+                <div className="property-footer-new">
+                  <div className="price-container">
+                    <span className="price-label">Starting Price</span>
+                    <span className="property-price-new">{property.price}</span>
+                  </div>
+                    <a href={property.link} className="cta-btn-new">
+                          View Details
+                        </a>
+                  {/* <button className="cta-btn-new">View Details</button> */}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="services-grids">
-          <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/start1.05CR.jpeg')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at 1.05 CR</h3>
-                <p className="card-description">
-                  Eureka Park, SECTOR 150, Noida
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/starting59.90Lac.jpg')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at 59.90 Lacs*</h3>
-                <p className="card-description">
-CRC JOYOUS, Techzone IV, Greater Noida West
-                </p>
-                  <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/fastProcasing.jpg')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at 3 CR</h3>
-                <p className="card-description">
-                  ELDECO ACCLAIM, Sohna Gurgaon
-                </p>
-                  <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/End_to_EndService.jpg')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 1.50 CR</h3>
-                <p className="card-description">
-IVY COUNTY, Sec 75, Noida
-                </p>
-                  <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-            <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 8.50 CR</h3>
-                <p className="card-description">
-                 MAX STATES, Sec 128, Noida
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-            <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 1.26 CR</h3>
-                <p className="card-description">
-                  STELLAR ONE PHASE 2, SECTOR 1, NOIDA
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-            <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 1.35 CR</h3>
-                <p className="card-description">
-                  Godrej Woods, Sec 43, Noida
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-            <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 3.75 CR</h3>
-                <p className="card-description">
-                  Godrej Tropical Isle, Sec 146, Noida
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-            <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at ₹ 5.88 CR</h3>
-                <p className="card-description">
-                 M3M THE CULLINAN, SECTOR 94, NOIDA
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* <div className="view-all-container-new">
+          <button className="view-all-btn-new">
+            Explore All Properties
+            <i className="fas fa-arrow-right"></i>
+          </button>
+        </div> */}
       </div>
     </section>
 
@@ -663,7 +864,44 @@ IVY COUNTY, Sec 75, Noida
         </div>
 
     <div className="new-services-grid">
+      
+
       <div className="new-service-card">
+        <div
+          className="new-card-image"
+          style={{ backgroundImage: "url('/Images/M3M_DEN.jpeg')" }}
+        >
+          <div className="new-card-content">
+            <span className="new-card-category">Starting</span>
+            <h3 className="new-card-title">Starting at 1.37 CR</h3>
+            <p className="new-card-description">
+             M3M MY DEN, SECTOR-67, GURGAON
+            </p>
+                    {/* <button className="new-card-btn">SEE PROPERTY</button> */}
+
+          </div>
+        </div>
+      </div>
+
+      <div className="new-service-card">
+        <div
+          className="new-card-image"
+          style={{ backgroundImage: "url('/Images/Signater.jpeg')" }}
+        >
+          <div className="new-card-content">
+            <span className="new-card-category">Starting</span>
+            <h3 className="new-card-title">Starting at 1.70 CR</h3>
+            <p className="new-card-description">
+              SIGNATURE GLOBAL, SECTOR-36, GURGAON
+            </p>
+            {/* <button className="new-card-btn">SEE PROPERTY</button> */}
+          </div>
+        </div>
+      </div>
+
+
+
+<div className="new-service-card">
         <div
           className="new-card-image"
           style={{ backgroundImage: "url('/Images/starting18Lac.jpeg')" }}
@@ -674,44 +912,10 @@ IVY COUNTY, Sec 75, Noida
             <p className="new-card-description">
               THE FLAGSHIP, Sector 140a, Noida Expressway
             </p>
-            <button className="new-card-btn">SEE PROPERTY</button>
+            {/* <button className="new-card-btn">SEE PROPERTY</button> */}
           </div>
         </div>
       </div>
-
-      <div className="new-service-card">
-        <div
-          className="new-card-image"
-          style={{ backgroundImage: "url('/Images/Affordble.Webp')" }}
-        >
-          <div className="new-card-content">
-            <span className="new-card-category">Starting</span>
-            <h3 className="new-card-title">Starting at 1.37 CR</h3>
-            <p className="new-card-description">
-             M3M MY DEN, SECTOR-67, GURGAON
-            </p>
-                    <button className="new-card-btn">SEE PROPERTY</button>
-
-          </div>
-        </div>
-      </div>
-
-      <div className="new-service-card">
-        <div
-          className="new-card-image"
-          style={{ backgroundImage: "url('/Images/fastProcasing.jpg')" }}
-        >
-          <div className="new-card-content">
-            <span className="new-card-category">Starting</span>
-            <h3 className="new-card-title">Starting at 1.70 CR</h3>
-            <p className="new-card-description">
-              SIGNATURE GLOBAL, SECTOR-36, GURGAON
-            </p>
-            <button className="new-card-btn">SEE PROPERTY</button>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -731,28 +935,12 @@ IVY COUNTY, Sec 75, Noida
         </div>
 
         <div className="services-grids">
-          <div className="service-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: "url('/Images/supports.webp')" }}
-            >
-              <div className="card-overlay">
-                <span className="card-category">Starting</span>
-                <h3 className="card-title">Starting at 7000 INR</h3>
-                <p className="card-description">
-                 INCUSPAZE TOWER, SOHNA ROAD, GURGAON
-                </p>
-                <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
           <div className="service-card">
             <div
               className="card-image"
-              style={{ backgroundImage: "url('/Images/Affordble.Webp')" }}
+              style={{ backgroundImage: "url('/Images/Workbase.jpeg')" }}
             >
               <div className="card-overlay">
                 <span className="card-category">Starting</span>
@@ -761,7 +949,7 @@ IVY COUNTY, Sec 75, Noida
 WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
                 </p>
                   <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
+{/* <a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a> */}
                 </div>
               </div>
             </div>
@@ -770,7 +958,7 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
           <div className="service-card">
             <div
               className="card-image"
-              style={{ backgroundImage: "url('/Images/fastProcasing.jpg')" }}
+              style={{ backgroundImage: "url('/Images/TheOffice.jpeg')" }}
             >
               <div className="card-overlay">
                 <span className="card-category">Starting</span>
@@ -779,12 +967,28 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
                  THE OFFICE PASS, SECTOR- 70, GURGAON
                 </p>
                   <div className='buttonSttyle'>
-<a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a>
+{/* <a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a> */}
                 </div>
               </div>
             </div>
           </div>
-         
+           <div className="service-card">
+            <div
+              className="card-image"
+              style={{ backgroundImage: "url('/Images/Tower.jpeg')" }}
+            >
+              <div className="card-overlay">
+                <span className="card-category">Starting</span>
+                <h3 className="card-title">Starting at 7000 INR</h3>
+                <p className="card-description">
+                 INCUSPAZE TOWER, SOHNA ROAD, GURGAON
+                </p>
+                <div className='buttonSttyle'>
+{/* <a href='/' className="cta-btn secondary-btn">SEE PROPERTY</a> */}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -923,7 +1127,7 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
 <StatsSection 
   data={statsData}
   title="Our Strengths"
-  backgroundColor="#f1faee"
+  backgroundColor="#00628c"
   accentColor="#1d3557"
 />
 
@@ -983,9 +1187,8 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
 
 
 
-
+{/* 
   <section className="partners-section">
-      {/* <div className="container"> */}
         <div className="partners-header">
           <h2 className="partners-title">OUR PARTNERS</h2>
         </div>
@@ -1013,7 +1216,6 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
             </div>
           </div>
 
-          {/* Navigation Arrows */}
           <button className="carousel-nav carousel-prev" onClick={prevSlide}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -1021,7 +1223,6 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
 
-          {/* Pagination Dots */}
           <div className="carousel-pagination">
             {Array.from({ length: Math.ceil(partners.length / slidesToShow()) }).map((_, index) => (
               <button
@@ -1032,9 +1233,8 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
               />
             ))}
           </div>
-        {/* </div> */}
       </div>
-    </section>
+    </section> */}
 
 
 
