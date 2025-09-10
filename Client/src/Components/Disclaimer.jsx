@@ -13,7 +13,7 @@ const Disclaimer = () => {
         </div>
 
         <div className="disclaimer-section">
-          <ol className="disclaimer-list">
+          <ol  className="disclaimer-list">
             <li>
               All information and materials on this website are provided on an "AS IS" basis and prepared for general guidance only, without warranties of any kind, either expressed or implied as to its completeness, accuracy, reliability, suitability, or availability. Accessing/visiting this website does not constitute an offer and/or contract of any type between Rajlakshmi International (Brand name as Rajlakshmi Realty). and the viewer/recipient. All transactions shall be subject to the terms and conditions of the Agreement for Sale to be entered into between Rajlakshmi International (Brand name as Rajlakshmi Realty). and the intending party.
             </li>

@@ -98,7 +98,7 @@ const handleSubmit = async (e) => {
               <i className="fas fa-building logo-icon"></i>
               <div className="logo-text">Infinity Realestate</div>
             </div>
-            <a href="https://rajlakshmirealty.com/" className="home-btn">
+            <a href="/" className="home-btn">
               <i className="fas fa-home"></i> BACK TO HOME
             </a>
           </div>

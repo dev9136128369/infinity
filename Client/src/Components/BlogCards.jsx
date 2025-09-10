@@ -80,16 +80,56 @@ export default function BlogPage() {
       </div>
 
       <div className="side-image">
-        <img src="/assets/realestate.jpg" alt="Real Estate" />
+        <img src="/Images/BlogTower.jpeg" alt="Real Estate" />
       </div>
     </section>
 
 
 
 
+
+
+
+
+
+ <section className="side-section">
+      <div className="side-image">
+        <img src="/Images/BlogProperty.jpeg" alt="Real Estate" />
+      </div>
+      <div className="side-content">
+        <h2>How to choose your first property?</h2>
+        <p>
+         When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.  </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+
+    
+    </section>
+
+
+
+
+
+
+<section className="side-section">
+      
+      <div className="side-content">
+        <h2>Why invest in Delhi?</h2>
+        <p>
+        India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.    </p>
+
+        <button className="side-btn">Learn More</button>
+      </div>
+  <div className="side-image">
+        <img src="/Images/BlogDelhi.jpeg" alt="Real Estate" />
+      </div>
+  
+    </section>
+
   <section className="side-section">
         <div className="side-image">
-        <img src="/assets/realestate.jpg" alt="Real Estate" />
+        <img src="/Images/helloWorld.jpg" alt="Real Estate" />
       </div>
       <div className="side-content">
         <h2>Hello world!</h2>
@@ -101,46 +141,6 @@ export default function BlogPage() {
 
   
     </section>
-
-
-
-
-
- <section className="side-section">
-      
-      <div className="side-content">
-        <h2>How to choose your first property?</h2>
-        <p>
-         When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.  </p>
-
-        <button className="side-btn">Learn More</button>
-      </div>
-
-    <div className="side-image">
-        <img src="/assets/realestate.jpg" alt="Real Estate" />
-      </div>
-    </section>
-
-
-
-
-
-
-<section className="side-section">
-        <div className="side-image">
-        <img src="/assets/realestate.jpg" alt="Real Estate" />
-      </div>
-      <div className="side-content">
-        <h2>Why invest in Delhi?</h2>
-        <p>
-        India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.    </p>
-
-        <button className="side-btn">Learn More</button>
-      </div>
-
-  
-    </section>
-
 
 
       {/* POSTS GRID */}

@@ -704,7 +704,7 @@ const CommercialPropertiesPage = () => {
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+      image: "/Images/TopCommirecal1.jpeg",
       link: "#"
     },
     {
@@ -716,7 +716,7 @@ const CommercialPropertiesPage = () => {
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+        image: "/Images/TopCommirecal2.jpeg",
       link: "#"
     },
     {
@@ -728,7 +728,7 @@ const CommercialPropertiesPage = () => {
       units: "10+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
+       image: "/Images/TopCommirecal3.jpeg",
       link: "#"
     },
     {
@@ -740,7 +740,7 @@ const CommercialPropertiesPage = () => {
       units: "30+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+       image: "/Images/TopCommirecal4.jpeg",
       link: "#"
     },
     {
@@ -752,7 +752,7 @@ title: "Fairfox EON",
       units: "25+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
+      image: "/Images/TopCommirecal5.jpeg",
       link: "#"
 
      
@@ -766,7 +766,7 @@ title: "Group 108 ONE FNG",
       units: "15+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
+     image: "/Images/TopCommirecal6.jpeg",
       link: "#"
 
      
@@ -785,7 +785,8 @@ title: "Group 108 ONE FNG",
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+           image: "/Images/TopCommir1.jpeg",
+
       link: "#"
     },
     {
@@ -797,7 +798,8 @@ title: "Group 108 ONE FNG",
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+               image: "/Images/TopCommir2.jpeg",
+
       link: "#"
     },
     {
@@ -809,7 +811,8 @@ title: "Group 108 ONE FNG",
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+               image: "/Images/TopCommir3.jpeg",
+
       link: "#"
     },
     {
@@ -821,7 +824,8 @@ title: "Group 108 ONE FNG",
       units: "30+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                image: "/Images/TopCommir4.jpeg",
+
       link: "#"
     },
     {
@@ -833,7 +837,8 @@ title: "Group 108 ONE FNG",
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                image: "/Images/TopCommir5.jpeg",
+
       link: "#"
     },
     {
@@ -845,7 +850,8 @@ title: "Dasnac Arc",
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                 image: "/Images/TopCommir6.jpeg",
+
       link: "#"
 
       
@@ -859,7 +865,8 @@ title: "Dasnac Arc",
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                image: "/Images/TopCommir7.jpeg",
+
       link: "#"
 
       
@@ -873,7 +880,8 @@ title: "Bhutani Cyberthum",
       units: "30+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                 image: "/Images/TopCommir8.jpeg",
+
       link: "#"
 
      
@@ -890,7 +898,8 @@ title: "Bhutani Cyberthum",
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                      image: "/Images/TopCom1.jpeg",
+
       link: "#"
     },
     {
@@ -902,7 +911,8 @@ title: "Bhutani Cyberthum",
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                            image: "/Images/TopCom2.jpeg",
+
       link: "#"
     },
     {
@@ -914,7 +924,8 @@ title: "Bhutani Cyberthum",
       units: "12+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                           image: "/Images/TopCom3.jpeg",
+
       link: "#"
     },
     {
@@ -926,7 +937,8 @@ title: "Bhutani Cyberthum",
       units: "30+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                            image: "/Images/TopCom4.jpeg",
+
       link: "#"
     },
     {
@@ -938,7 +950,8 @@ title: "ORION ONE",
       units: "5+",
       status: "Ready to Move",
       // type: "Office Space",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                            image: "/Images/TopCom5.jpeg",
+
       link: "#"
 
      
@@ -952,7 +965,8 @@ title: "M3M THE LINE",
       units: "30+",
       status: "Under Construction",
       // type: "Retail",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                            image: "/Images/TopCom6.jpeg",
+
       link: "#"
 
       

@@ -48,9 +48,14 @@ const Navbar = () => {
             </span>
           </div>
           <div className="social-icons">
-            <a href="www.linkedin.com/in/rakesh-kumar-1aba1a57" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
-              <FontAwesomeIcon icon={faLinkedin} className="social-iconl" />
-            </a>
+          <a 
+  href="https://www.linkedin.com/in/rakesh-kumar-1aba1a57" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  onClick={handleFooterLinkClick}
+>
+  <FontAwesomeIcon icon={faLinkedin} className="social-iconl" />
+</a>
             <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faFacebook} className="social-iconf" />
             </a>

@@ -45,7 +45,7 @@ const styles = `
 
   /* ================= HERO SECTION ================= */
   .hero {
-    background: linear-gradient(rgb(26 54 93 / 49%), rgba(19, 40, 70, 0.85)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');
+    background: linear-gradient(rgb(26 54 93 / 49%), #00628c);
     background-size: cover;
     background-position: center;
     color: white;
@@ -57,21 +57,34 @@ const styles = `
   .hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 800;
     transform: translateY(30px);
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto 40px;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease 0.2s forwards;
+    color: white;
   }
-
+.side-image{
+    flex: 1;
+    display: flex
+;
+    justify-content: center;
+    height: 40vh;
+}
+    .side-image img{
+        width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
   .hero-buttons {
     display: flex;
     justify-content: center;
@@ -197,7 +210,15 @@ const styles = `
     font-size: 0.8rem;
     font-weight: 600;
   }
-
+.side-section{
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    gap: 40px;
+margin-bottom: 2rem
+}
   .property-price {
     position: absolute;
     bottom: 15px;
@@ -472,6 +493,25 @@ const styles = `
       border-radius: 6px;
       padding: 15px;
     }
+ 
+
+      .side-content {
+    flex: 1;
+    margin-top: 5rem;
+}
+    .side-section{
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    gap: 40px;
+margin-bottom: 5rem
+}
+.slider-titl{
+margin-top: 8rem;
+}
+
   }
 
   @media (max-width: 480px) {
@@ -513,16 +553,7 @@ const PropertyCard = ({ property }) => {
           <FontAwesomeIcon icon={faMapMarkerAlt} />
           <span>{property.location}</span>
         </div>
-        {/* <div className="property-actions">
-          <a href={property.link} className="action-btn">
-            <span>View Details</span>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </a>
-          <a href={`tel:+91XXXXXX`} className="action-btn outline">
-            <FontAwesomeIcon icon={faPhone} />
-            <span>Call</span>
-          </a>
-        </div> */}
+    
       </div>
     </div>
   );
@@ -542,10 +573,11 @@ const SectionHeader = ({ title, description, id }) => {
 const HeroSection = () => {
   return (
     <section className="hero">
-      <div className="container">
+<section className="side-section">
+      <div className="side-content">
         <h1>TOP RESIDENTIAL PROPERTY</h1>
         <p>Looking for comfort, style, and convenience? Explore the finest residential properties designed for modern living.</p>
-        <div className="hero-buttons">
+         <div className="hero-buttons">
           <a href="/LeasingPropertiesPage" className="hero-btn">
             TOP LEASING PROPERTY
           </a>
@@ -553,7 +585,14 @@ const HeroSection = () => {
             TOP COMERCIAL PROPERTY
           </a>
         </div>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
+
+      <div className="side-image">
+        <img src="/Images/leasing.jpeg" alt="Real Estate" />
+      </div>
+    </section>
+
     </section>
   );
 };
@@ -624,7 +663,7 @@ const ResidentialPropertiesPage = () => {
       location: "SECTOR-12, NOIDA",
       price: "₹44 Lac",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
+      image: "/Images/Resdiental1.jpeg",
       link: "#"
     },
     {
@@ -633,7 +672,8 @@ const ResidentialPropertiesPage = () => {
       location: "SECTOR 107, NOIDA",
       price: "₹3.13 CR*",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
+            image: "/Images/Resdientail2.jpeg",
+
       link: "#"
     },
     {
@@ -642,7 +682,8 @@ const ResidentialPropertiesPage = () => {
       location: "SECTOR 150, NOIDA",
       price: "₹1.05 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+         image: "/Images/Resdientail3.jpeg",
+
       link: "#"
     },
 
@@ -653,7 +694,8 @@ const ResidentialPropertiesPage = () => {
       location: "SECTOR 94, NOIDA",
       price: "₹5.88 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
+          image: "/Images/Resdientail4.jpeg",
+
       link: "#"
     },
     {
@@ -662,7 +704,8 @@ const ResidentialPropertiesPage = () => {
       location: "SECTOR 146, NOIDA",
       price: "₹3.75 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
+           image: "/Images/Resdientail5.jpeg",
+
       link: "#"
     },
     {
@@ -671,7 +714,8 @@ title: "GODREJ WOOD",
       location: "SECTOR 43, NOIDA",
       price: "₹ 1.35 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+          image: "/Images/Resdientail6.jpeg",
+
       link: "#"
 
      
@@ -685,7 +729,8 @@ title: "GODREJ WOOD",
       location: "SECTOR 1, NOIDA",
       price: "₹ 1.26 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/elementor/thumbs/image-0-compressed-2-1-qidymg059tbz0beu5v5ckubosn60eaxqnmxiqntjsi.jpg",
+         image: "/Images/Resdientail7.jpeg",
+
       link: "#"
 
 
@@ -696,7 +741,8 @@ title: "GODREJ WOOD",
       location: "Sec 128, Noida",
       price: "₹ 8.50 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-2-768x393.jpg",
+      image: "/Images/Resdientail8.jpeg",
+
       link: "#"
 
      
@@ -707,7 +753,8 @@ title: "GODREJ WOOD",
       location: "Sec 75, Noida",
       price: "₹ 1.50 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-3-compressed-1-768x432.jpg",
+      image: "/Images/Resdientail9.jpeg",
+
       link: "#"
 
     }
@@ -723,7 +770,7 @@ title: "GODREJ WOOD",
       location: "SECTOR 36, GURGAON",
       price: "₹1.70 CR*",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
+      image: "/Images/Resdient1.jpeg",
       link: "#"
     },
     {
@@ -732,7 +779,8 @@ title: "GODREJ WOOD",
       location: "TECHZONE IV, GREATER NOIDA WEST",
       price: "₹59.90 Lacs*",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
+           image: "/Images/Resdient2.jpeg",
+
       link: "#"
     },
     {
@@ -741,7 +789,8 @@ title: "GODREJ WOOD",
       location: "Sohna Gurgaon",
       price: "₹ 3 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-15.jpg",
+            image: "/Images/Resdient3.jpeg",
+
       link: "#"
     },
       {
@@ -750,7 +799,8 @@ title: "GODREJ WOOD",
       location: "SECTOR 62 GURGAON",
       price: "₹ 1.7 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-14.jpg",
+          image: "/Images/Resdient4.jpeg",
+
       link: "#"
 
      
@@ -761,7 +811,8 @@ title: "GODREJ WOOD",
       location: "SECTOR 63 A, GURGAON",
       price: "₹ 1.3 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-2-compressed-13.jpg",
+            image: "/Images/Resdient5.jpeg",
+
       link: "#"
 
      
@@ -775,7 +826,7 @@ title: "GODREJ WOOD",
       location: "SECTOR-36, GURGAON",
       price: "₹ 1.70 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/gurgaon.jpg",
+                  image: "/Images/Resd1.jpeg",
       link: "#"
     },
     {
@@ -784,7 +835,8 @@ title: "GODREJ WOOD",
       location: "SECTOR-67, GURGAON",
       price: "₹ 1.37 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/best-places-to-live-in-pune-800x533-1-768x512.jpg",
+                      image: "/Images/Resd2.jpeg",
+
       link: "#"
     },
     {
@@ -793,7 +845,8 @@ title: "GODREJ WOOD",
       location: "SECTOR-88, GURGAON",
       price: "₹ 2.77 CR",
       // type: "Residential",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2023/08/1388388393Neotown-Dec-2013-night-view-1024x577-1-768x433.jpg",
+                       image: "/Images/Resd3.jpeg",
+
       link: "#"
 
      
@@ -905,7 +958,7 @@ title: "GODREJ WOOD",
         {/* Affordable Properties Section */}
         <section className="property-listings">
              <div className="slider-header">
-          <h2 className="slider-titl">MOST AFFORDABLE RESIDENTIAL PROPERTIES</h2>
+          <h2 className="slider-tit">MOST AFFORDABLE RESIDENTIAL PROPERTIES</h2>
           <p className="slider-subtitl">Affordable residential projects are in high demand as they combine modern living with pocket-friendly prices, perfect for families and individuals starting their homeownership journey.</p>
         </div>
           <SectionHeader 
@@ -925,7 +978,7 @@ title: "GODREJ WOOD",
         {/* Prime Locations Section */}
         <section className="property-listings">
               <div className="slider-header">
-          <h2 className="slider-titl">PRIME LOCATIONS RESIDENTIAL PROPERTY</h2>
+          <h2 className="slider-tit">PRIME LOCATIONS RESIDENTIAL PROPERTY</h2>
           <p className="slider-subtitl">Residential projects in prime locations are highly sought after for their balance of lifestyle, accessibility, and long-term investment value.</p>
         </div>
           <SectionHeader 

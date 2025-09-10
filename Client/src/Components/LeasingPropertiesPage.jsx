@@ -45,7 +45,7 @@ const styles = `
 
   /* ================= HERO SECTION ================= */
   .hero {
-    background: linear-gradient(rgb(26 54 93 / 49%), rgba(19, 40, 70, 0.85)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');
+    background: #17313E;
     background-size: cover;
     background-position: center;
     color: white;
@@ -57,21 +57,29 @@ const styles = `
   .hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 800;
     transform: translateY(30px);
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto 40px;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease 0.2s forwards;
+    color: white;
   }
-
+.side-section {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    gap: 40px;
+}
   .hero-buttons {
     display: flex;
     justify-content: center;
@@ -275,7 +283,19 @@ const styles = `
     transform: translateY(30px);
     transition: transform 1s ease, opacity 1s ease;
   }
-
+.side-image {
+    flex: 1;
+    display: flex
+;
+    justify-content: center;
+    height: 40vh;
+}
+    .side-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
   .testimonials.animate {
     opacity: 1;
     transform: translateY(0);
@@ -472,6 +492,13 @@ const styles = `
       border-radius: 6px;
       padding: 15px;
     }
+          .side-content {
+    flex: 1;
+    margin-top: 5rem;
+}
+      .slider-titl{
+margin-top: 8rem;
+}
   }
 
   @media (max-width: 480px) {
@@ -541,19 +568,42 @@ const SectionHeader = ({ title, description, id }) => {
 // Hero Section Component
 const HeroSection = () => {
   return (
-    <section className="hero">
-      <div className="container">
+    // <section className="hero">
+    //   <div className="container">
+    //     <h1>TOP LEASING PROPERTY</h1>
+    //     <p>Discover top leasing properties that combine affordability, accessibility, and modern amenities for hassle-free living.</p>
+    //     <div className="hero-buttons">
+    //       <a href="/TopCommirical" className="hero-btn">
+    //         TOP COMMERCIAL PROPERTY
+    //       </a>
+    //       <a href="/ResidentialProperty" className="hero-btn outline">
+    //         TOP RESIDENTIAL PROPERTY
+    //       </a>
+    //     </div>
+    //   </div>
+    // </section>
+        <section className="hero">
+<section className="side-section">
+      <div className="side-content">
         <h1>TOP LEASING PROPERTY</h1>
-        <p>Discover top leasing properties that combine affordability, accessibility, and modern amenities for hassle-free living.</p>
-        <div className="hero-buttons">
-          <a href="/TopCommirical" className="hero-btn">
-            TOP COMMERCIAL PROPERTY
-          </a>
-          <a href="/ResidentialProperty" className="hero-btn outline">
-            TOP RESIDENTIAL PROPERTY
-          </a>
-        </div>
+               <p>Discover top leasing properties that combine affordability, accessibility, and modern amenities for hassle-free living.</p>
+
+          <div className="hero-buttons">
+           <a href="/TopCommirical" className="hero-btn">
+             TOP COMMERCIAL PROPERTY
+           </a>
+           <a href="/ResidentialProperty" className="hero-btn outline">
+             TOP RESIDENTIAL PROPERTY
+           </a>
+         </div>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
+
+      <div className="side-image">
+        <img src="/Images/ResdientailBanner.jpeg" alt="Real Estate" />
+      </div>
+    </section>
+
     </section>
   );
 };
@@ -624,7 +674,7 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR-94, NOIDA",
       price: "₹82 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-9-1.jpg",
+      image: "/Images/leasing.jpeg",
       link: "#"
     },
     {
@@ -633,7 +683,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR-142, NOIDA",
       price: "₹60 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-8-1.jpg",
+           image: "/Images/leasing1.jpeg",
+
       link: "#"
     },
     {
@@ -642,7 +693,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR 140A, NOIDA",
       price: "₹35 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-7-1.jpg",
+            image: "/Images/leasing2.jpeg",
+
       link: "#"
 
 
@@ -656,7 +708,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR-72, NOIDA",
       price: "₹90 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                  image: "/Images/Leasi.jpeg",
+
       link: "#"
     },
     {
@@ -665,7 +718,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR-50, NOIDA",
       price: "₹1.13 CR",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                        image: "/Images/Leasi1.jpeg",
+
       link: "#"
     },
     {
@@ -674,7 +728,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR 140A, NOIDA",
       price: "₹15 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                        image: "/Images/Leasi2.jpeg",
+
       link: "#"
 
       
@@ -685,7 +740,8 @@ const LeasingPropertiesPage = () => {
       location: "SECTOR-36, GURGAON",
       price: "₹1.70 CR",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                        image: "/Images/Leasi3.jpeg",
+
       link: "#"
     },
     {
@@ -694,7 +750,8 @@ title: "ORION ONE",
       location: "SECTOR-32, NOIDA",
       price: "₹36 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                        image: "/Images/Leasi4.jpeg",
+
       link: "#"
 
    
@@ -705,7 +762,8 @@ title: "M3M THE LINE",
       location: "SECTOR 72, NOIDA",
       price: "₹65 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                        image: "/Images/Leasi5.jpeg",
+
       link: "#"
 
      
@@ -719,7 +777,8 @@ title: "M3M THE LINE",
       location: "SECTOR-72, NOIDA",
       price: "₹90 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-6-1.jpg",
+                             image: "/Images/leacomairacial.jpeg",
+
       link: "#"
     },
     {
@@ -728,7 +787,8 @@ title: "M3M THE LINE",
       location: "SECTOR-50, NOIDA",
       price: "₹1.13 Cr*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-3-1.jpg",
+                                   image: "/Images/leacomairacial1.jpeg",
+
       link: "#"
     },
     {
@@ -737,7 +797,8 @@ title: "M3M THE LINE",
       location: "SECTOR 140A, NOIDA",
       price: "₹15 Lacs*",
       // type: "Leasing",
-      image: "https://rajlakshmirealty.com/wp-content/uploads/2024/01/image-1-compressed-5-1.jpg",
+                                  image: "/Images/leacomairacial2.jpeg",
+
       link: "#"
 
       
@@ -849,7 +910,7 @@ text: "Raj Lakshmi Reality helped me find the perfect leasing property for my bu
         {/* Affordable Properties Section */}
         <section className="property-listings">
                    <div className="slider-header">
-          <h2 className="slider-titl">MOST AFFORDABLE LEASING PROPERTIES</h2>
+          <h2 className="slider-tit">MOST AFFORDABLE LEASING PROPERTIES</h2>
           <p className="slider-subtitl">Affordable leasing properties are gaining popularity with their budget-friendly rents and flexible agreements, making them a smart choice for students, working professionals, and families looking for convenient living solutions.</p>
         </div>
           <SectionHeader 
@@ -869,7 +930,7 @@ text: "Raj Lakshmi Reality helped me find the perfect leasing property for my bu
         {/* Prime Locations Section */}
         <section className="property-listings">
                      <div className="slider-header">
-          <h2 className="slider-titl">PRIME LOCATIONS LEASING PROPERTY</h2>
+          <h2 className="slider-tit">PRIME LOCATIONS LEASING PROPERTY</h2>
           <p className="slider-subtitl">Leasing properties in prime locations offer unmatched convenience, seamless connectivity, and modern amenities, making them ideal for families, professionals, and students seeking a vibrant lifestyle.</p>
         </div>
           <SectionHeader 

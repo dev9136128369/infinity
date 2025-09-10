@@ -229,7 +229,13 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+.menu-toggle .svg-inline--fa{
+  color: white;
+}
 
+.menu-toggle .svg-inline--fa:hover{
+  color: rgb(212, 175, 55);
+}
 /* Responsive styles */
 @media screen and (max-width: 992px) {
   .info-content {
@@ -256,7 +262,7 @@ body {
     z-index: 999;
     overflow-y: auto;
   }
-  
+
   .nav-menu.active {
     left: 0;
   }
@@ -2539,7 +2545,7 @@ background-color: #00000033;
 }
 
 .why-header h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
   position: relative;
@@ -2596,7 +2602,7 @@ background-color: #00000033;
   font-size: 22px;
   margin-bottom: 10px;
   color: #222;
-  border-left: 4px solid #d35400;
+  border-left: 4px solid rgb(212, 175, 55);
   padding-left: 10px;
 }
 
@@ -2881,7 +2887,7 @@ background-color: #00000033;
   border-radius: 12px;
   padding: 2.5rem 2rem;
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
-  border-left: 4px solid #ff8800;
+  border-left: 4px solid rgb(212, 175, 55);
   transition: all 0.3s ease;
   animation: fadeIn 0.6s ease forwards;
 
@@ -5386,7 +5392,10 @@ header {
   height: 60vh;
   margin-bottom: 3rem;
 }
-
+.heroConatct .side-section{
+  padding-top: 0rem;
+  margin-top: -4rem;
+}
 .heroConatct h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
@@ -5653,10 +5662,11 @@ textarea.form-control {
 
 .accordion-content-inner {
   padding: 1.5rem;
+  height: auto !important;
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 1000px;
+  max-height: 300rem;
 }
 
 .accordion-item.active .accordion-header i {
@@ -5786,7 +5796,7 @@ textarea.form-control {
 .home-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #3498db;
+  background-color: rgb(212, 175, 55);
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -5796,8 +5806,9 @@ textarea.form-control {
 }
 
 .home-button:hover {
-  background-color: #2980b9;
+  background-color: rgb(165, 135, 38);
   transform: translateY(-2px);
+  color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -5866,6 +5877,16 @@ textarea.form-control {
   .policy-section h2 {
     font-size: 1.5rem;
   }
+  .heroConatct {
+  background-color: #00628c;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+  height: 60vh;
+  margin-bottom: 3rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -6259,6 +6280,7 @@ textarea.form-control {
   background: linear-gradient(to right, #636fa4, #00628D);
   padding: 80px 0;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .carousel-container {
@@ -6547,7 +6569,7 @@ textarea.form-control {
 .bp-cta__box{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:20px;background:linear-gradient(135deg,#004d61, rgba(14,165,201,0.07));padding:22px;border-radius:16px;border:1px solid rgba(14,165,201,0.12);box-shadow:var(--shadow);color:white}
 .bp-cta__title{margin:0;font-size:1.5rem}
 .bp-cta__text{margin:0;color:rgba(255,255,255,0.9)}
-.bp-cta__btn{background:var(--accent);padding:.6rem 1rem;border-radius:999px;color:#052018;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(14,165,201,0.14)}
+.bp-cta__btn{background: rgb(212, 175, 55);padding:.6rem 1rem;border-radius:999px;color:white;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(14,165,201,0.14)}
 
 /* Responsive */
 @media (max-width: 980px) {
@@ -6764,6 +6786,29 @@ textarea.form-control {
   .modal-content {
     padding: 1rem;
   }
+  .slider-tit {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  /* margin-bottom: 15px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-top: 4rem;
+}
+
+.slider-tit::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #2c3e50);
+  border-radius: 2px;
+}
 }
  
 
@@ -7180,6 +7225,14 @@ box-shadow: 0px 0px 4px 0px black;
   .property-content {
     padding: 1rem;
   }
+  .slider-subtitl {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 0rem;
+  text-align: justify;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -8176,7 +8229,10 @@ box-shadow: 0px 0px 4px 0px black;
   color: black;
   text-align: justify;
 }
-
+.side-contente p{
+  color: white;
+  font-size: 1.3rem;
+}
 .side-content ul {
   list-style: none;
   padding: 0;
@@ -8445,12 +8501,28 @@ box-shadow: 0px 0px 4px 0px black;
   .timeline-item.right {
     left: 0;
   }
+  .bp-hero__shape{
+    width: 20rem;
+  }
+  .hero__shape{
+    width: 20rem;
+
+  }
+.hero-sectione h1{
+  margin-top: 2.5rem;
+  font-size: 3.5rem;
+}
 }
 
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(30px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+
+
+
+
 
 
 

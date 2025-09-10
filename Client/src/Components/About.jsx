@@ -126,19 +126,19 @@ const AboutUsRajlakshmi = () => {
           <TeamCard
  name="Mr. Misra"
             role="Chief Human Resources Officer"
-            img="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop"
+            img="/Images/ChifHuman.jpg"
 
            
           />
           <TeamCard
             name="Varun Singhal"
             role="Chief Financial Officer"
-            img="https://images.unsplash.com/photo-1546527868-ccb7ee67eabf?q=80&w=800&auto=format&fit=crop"
+            img="/Images/ChiefFinancial.jpg"
           />
           <TeamCard
             name="Rajesh Kumar"
             role="Chief Executive Officer"
-            img="https://images.unsplash.com/photo-1603415526960-f7e0328d13d1?q=80&w=800&auto=format&fit=crop"
+            img="/Images/ChiefExecutive.jpg"
           />
         </div>
       </section>
@@ -227,7 +227,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui, -appl
 .section-titles{font-size:2rem;margin:0 25rem 14px; color:white; font-weight:700}
 
 .subtext{color:white; font-size:1.3rem}
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.1rem;border-radius:999px;background:var(--brand);color:#081018;text-decoration:none;font-weight:700;box-shadow:0 6px 16px rgba(76,201,240,.25);transition:.2s transform ease, .2s box-shadow ease}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.1rem;border-radius:999px;background:rgb(212, 175, 55);color:white;text-decoration:none;font-weight:700;box-shadow:0 6px 16px rgba(76,201,240,.25);transition:.2s transform ease, .2s box-shadow ease}
 .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(76,201,240,.35)}
 
 /* Hero */
@@ -290,6 +290,22 @@ linear-gradient(180deg, #0b1020 0%, #0d1321 100%)}
 @media (max-width: 900px){
   .glance__grid{grid-template-columns:1fr;gap:20px}
   .team__grid{grid-template-columns:repeat(2,1fr)}
+  .hero__shape{
+  width: 20rem;
+  }
+  .section-titles{
+      margin: 0 10rem 14px;
+  }
+      .hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 8rem;
+}
+    .glance__text{
+   padding-left:20px;
+    }
+
 }
 @media (max-width: 560px){
   .stats__grid{grid-template-columns:repeat(2,1fr)}

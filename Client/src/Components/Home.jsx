@@ -214,7 +214,7 @@ const home = () => {
       id: 1,
        title: "How to choose your first Property?",
       description: "There are many things to consider before purchasing your first property.",
-      link: "https://rajlakshmirealty.com/1589-2/",
+      // link: "https://rajlakshmirealty.com/1589-2/",
       image: "/Images/home.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
@@ -225,7 +225,7 @@ const home = () => {
       id: 2,
       title: "Why Invest in Delhi?",
       description: "Delhi is one of the best City to live in India.",
-      link: "https://rajlakshmirealty.com/why-invest-in-delhi/",
+      // link: "https://rajlakshmirealty.com/why-invest-in-delhi/",
       image: "/Images/Invester.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
@@ -333,15 +333,14 @@ const home = () => {
 
  const heroSlides = [
   {
-    title: " Infinity Real Estate – Trusted Homes & Smart Investments",
+    title: "Smart Living, Trusted Real Estate",
     description:
       "Infinity Real Estate connects investors with prime commercial spaces and high-return opportunities.",
     features: [
   " Premium Business & Investment Properties",
   " Data-Driven Market Insights",
   " End-to-End Transaction Expertise",
-  " RERA-Compliant & Transparent Deals",
-  " High ROI Opportunities for Investors",
+
 ],
     image: "/Images/BlueBildings.jpeg",
   },
@@ -353,7 +352,7 @@ features: [
   " Flexible Ownership & Loan Support",
   " Transparent & Verified Projects",
 ],
-       image: "/Images/bildings.jpeg",
+       image: "/Images/Homaes.jpg",
 
   },
   {
@@ -526,7 +525,7 @@ function useWindowWidth() {
                   position: "relative",
                   zIndex: 2,
                   padding: width < 768 ? "20px" : "80px",
-                  paddingTop: width < 768 ? "13rem" : "10rem",
+                  paddingTop: width < 768 ? "13rem" : "9rem",
                 }}
               >
                 <h1
