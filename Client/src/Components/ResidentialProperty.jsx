@@ -151,7 +151,40 @@ const styles = `
     font-size: 1.1rem;
     // padding-bottom:2rem;
   }
+.slider-tit {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  /* margin-bottom: 15px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-top: 4rem;
+}
 
+.slider-titl::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #2c3e50);
+  border-radius: 2px;
+}
+  .slider-tit::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #2c3e50);
+  border-radius: 2px;
+}
   /* ================= PROPERTY CARDS GRID ================= */
   .properties-grid {
     display: grid;
@@ -509,7 +542,7 @@ margin-bottom: 2rem
 margin-bottom: 5rem
 }
 .slider-titl{
-margin-top: 8rem;
+margin-top: 2rem;
 }
 
   }
@@ -589,7 +622,7 @@ const HeroSection = () => {
       </div>
 
       <div className="side-image">
-        <img src="/Images/leasing.jpeg" alt="Real Estate" />
+        <img src="/Images/Resdient4.jpeg" alt="Real Estate" />
       </div>
     </section>
 
@@ -799,7 +832,7 @@ title: "GODREJ WOOD",
       location: "SECTOR 62 GURGAON",
       price: "₹ 1.7 CR",
       // type: "Residential",
-          image: "/Images/Resdient4.jpeg",
+          image: "/Images/EMAAR.jpeg",
 
       link: "#"
 

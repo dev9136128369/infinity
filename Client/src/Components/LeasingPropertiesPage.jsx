@@ -54,6 +54,8 @@ const styles = `
     margin-top: 80px;
   }
 
+  
+
   .hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
@@ -272,7 +274,50 @@ const styles = `
     background-color: var(--primary);
     color: red;
   }
-
+.slider-tit {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  /* margin-bottom: 15px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-top: 4rem;
+}
+.slider-titl {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  /* margin-bottom: 15px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-top: 4rem;
+}
+.slider-titl::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #2c3e50);
+  border-radius: 2px;
+}
+   .slider-tit::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #2c3e50);
+  border-radius: 2px;
+}
   /* ================= TESTIMONIALS ================= */
   .testimonials {
     padding: 80px 0;
@@ -497,7 +542,7 @@ const styles = `
     margin-top: 5rem;
 }
       .slider-titl{
-margin-top: 8rem;
+margin-top: 2rem;
 }
   }
 

@@ -275,7 +275,7 @@ const handleSubmit = async (e) => {
               <h3><i className="fas fa-question-circle"></i> Business Query</h3>
               <p>For any Business query, use the following details to contact us</p>
               <div className="contact-info">
-                <p><i className="fas fa-phone"></i> +9871967601</p>
+                <p><i className="fas fa-phone"></i>9899282878</p>
                 <p><i className="fas fa-envelope"></i> support@infinityrealestate.estate</p>
               </div>
             </div>

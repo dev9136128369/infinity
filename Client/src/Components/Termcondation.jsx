@@ -44,20 +44,20 @@ const Termcondation = () => {
   return (
     <div>
       <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-building logo-icon"></i>
-                    <div class="logo-text">Rajlakshmi Realty</div>
+        <div className="container">
+            <div className="header-content">
+                <div className="logo">
+                    <i className="fas fa-building logo-icon"></i>
+                    <div className="logo-text">Infinity Realty</div>
                 </div>
-                <a href="https://rajlakshmirealty.com/" class="home-btn">
-                    <i class="fas fa-home"></i> BACK TO HOME
+                <a href="/" className="home-btn">
+                    <i className="fas fa-home"></i> BACK TO HOME
                 </a>
             </div>
         </div>
     </header>
 
-    <div class="page-title">
+    <div className="page-title">
         {/* <div class="container">
             <h1>Terms & Conditions</h1>
             <p>Please read these terms carefully before using our services</p>
@@ -69,39 +69,39 @@ const Termcondation = () => {
         </div>
     </div>
 
-    <div class="container">
-        <div class="content-container">
-            <div class="toc-sidebar">
-                <h3 class="toc-title">Contents</h3>
-                <ul class="toc-list">
-                    <li><a href="#general"><i class="fas fa-chevron-right"></i> 1. General</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-right"></i> 2. The Services</a></li>
-                    <li><a href="#eligibility"><i class="fas fa-chevron-right"></i> 3. Eligibility</a></li>
-                    <li><a href="#term"><i class="fas fa-chevron-right"></i> 4. Term</a></li>
-                    <li><a href="#termination"><i class="fas fa-chevron-right"></i> 5. Termination</a></li>
-                    <li><a href="#platform"><i class="fas fa-chevron-right"></i> 6. Online Service Platform</a></li>
-                    <li><a href="#communication"><i class="fas fa-chevron-right"></i> 7. Communication</a></li>
-                    <li><a href="#charges"><i class="fas fa-chevron-right"></i> 8. Charges</a></li>
-                    <li><a href="#obligations"><i class="fas fa-chevron-right"></i> 9. User Obligations</a></li>
-                    <li><a href="#suspension"><i class="fas fa-chevron-right"></i> 10. Suspension</a></li>
-                    <li><a href="#indemnity"><i class="fas fa-chevron-right"></i> 11. Indemnity</a></li>
-                    <li><a href="#ip"><i class="fas fa-chevron-right"></i> 12. Intellectual Property</a></li>
-                    <li><a href="#disclaimer"><i class="fas fa-chevron-right"></i> 13. Disclaimer</a></li>
-                    <li><a href="#submissions"><i class="fas fa-chevron-right"></i> 14. Submissions</a></li>
-                    <li><a href="#dispute"><i class="fas fa-chevron-right"></i> 15. Dispute Resolution</a></li>
-                    <li><a href="#notices"><i class="fas fa-chevron-right"></i> 16. Notices</a></li>
-                    <li><a href="#misc"><i class="fas fa-chevron-right"></i> 17. Miscellaneous</a></li>
+    <div className="container">
+        <div className="content-container">
+            <div className="toc-sidebar">
+                <h3 className="toc-title">Contents</h3>
+                <ul className="toc-list">
+                    <li><a href="#general"><i className="fas fa-chevron-right"></i> 1. General</a></li>
+                    <li><a href="#services"><i className="fas fa-chevron-right"></i> 2. The Services</a></li>
+                    <li><a href="#eligibility"><i className="fas fa-chevron-right"></i> 3. Eligibility</a></li>
+                    <li><a href="#term"><i className="fas fa-chevron-right"></i> 4. Term</a></li>
+                    <li><a href="#termination"><i className="fas fa-chevron-right"></i> 5. Termination</a></li>
+                    <li><a href="#platform"><i className="fas fa-chevron-right"></i> 6. Online Service Platform</a></li>
+                    <li><a href="#communication"><i className="fas fa-chevron-right"></i> 7. Communication</a></li>
+                    <li><a href="#charges"><i className="fas fa-chevron-right"></i> 8. Charges</a></li>
+                    <li><a href="#obligations"><i className="fas fa-chevron-right"></i> 9. User Obligations</a></li>
+                    <li><a href="#suspension"><i className="fas fa-chevron-right"></i> 10. Suspension</a></li>
+                    <li><a href="#indemnity"><i className="fas fa-chevron-right"></i> 11. Indemnity</a></li>
+                    <li><a href="#ip"><i className="fas fa-chevron-right"></i> 12. Intellectual Property</a></li>
+                    <li><a href="#disclaimer"><i className="fas fa-chevron-right"></i> 13. Disclaimer</a></li>
+                    <li><a href="#submissions"><i className="fas fa-chevron-right"></i> 14. Submissions</a></li>
+                    <li><a href="#dispute"><i className="fas fa-chevron-right"></i> 15. Dispute Resolution</a></li>
+                    <li><a href="#notices"><i className="fas fa-chevron-right"></i> 16. Notices</a></li>
+                    <li><a href="#misc"><i className="fas fa-chevron-right"></i> 17. Miscellaneous</a></li>
                 </ul>
             </div>
 
-            <div class="terms-content">
-                <section id="general" class="section">
-                    <h2 class="section-title"><i class="fas fa-file-contract"></i> 1. GENERAL</h2>
-                    <div class="section-content">
+            <div className="terms-content">
+                <section id="general" className="section">
+                    <h2 className="section-title"><i className="fas fa-file-contract"></i> 1. GENERAL</h2>
+                    <div className="section-content">
                           <ol>
               <li>This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures.</li>
-              <li>This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of www. rajlakshmirealty.com</li>
-              <li>The domain name www.rajlakshmirealty.com ("Website"), is owned and operated by Rajlakshmi International (Brand name as Rajlakshmi Realty) ("Company") a Private Company limited by shares, incorporated under the provisions of the Companies Act, 2013, and having its registered office at G004, Tower D, Golf City, Plot No 8, Sector 75, Noida, Uttar Pradesh 201301, where such expression shall, unless repugnant to the context thereof, be deemed to include its respective representatives, administrators, employees, directors, officers, agents and their successors and assigns.</li>
+              <li>This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of www.infinityrealestate.estate</li>
+              <li>The domain name www.infinityrealestate.estate ("Website"), is owned and operated by Infinity International (Brand name as Infinity Realty) ("Company") a Private Company limited by shares, incorporated under the provisions of the Companies Act, 2013, and having its registered office at G004, Tower D, Golf City, Plot No 8, Sector 75, Noida, Uttar Pradesh 201301, where such expression shall, unless repugnant to the context thereof, be deemed to include its respective representatives, administrators, employees, directors, officers, agents and their successors and assigns.</li>
               <li>For the purpose of these Terms of Use ("Terms"), wherever the context so requires,
                 <ol>
                   <li>The term 'You' & 'User' shall mean any legal person or entity accessing or using the services provided on this Website, who is competent to enter into binding contracts, as per the provisions of the Indian Contract Act, 1872;</li>
@@ -116,11 +116,11 @@ const Termcondation = () => {
             <p>8. The Company reserves the sole and exclusive right to amend or modify these Terms without any prior permission or intimation to the User, and the User expressly agrees that any such amendments or modifications shall come into effect immediately. The User has a duty to periodically check the terms and stay updated on its requirements. If the User continues to use the Website following such a change, the User will be deemed to have consented to any and all amendments / modifications made to the Terms. In so far as the User complies with these Terms, he/she is granted a personal, non-exclusive, non-transferable, revocable, limited privilege to enter and use the Website.</p></div>
                 </section>
 
-                <section id="services" class="section">
-                    <h2 class="section-title"><i class="fas fa-concierge-bell"></i> 2. THE SERVICES</h2>
-                    <div class="section-content">
+                <section id="services" className="section">
+                    <h2 className="section-title"><i className="fas fa-concierge-bell"></i> 2. THE SERVICES</h2>
+                    <div className="section-content">
                         <p>We are a professional real estate consultancy company. Below mentioned is the list of services.</p>
-                        <div class="highlight-box">
+                        <div className="highlight-box">
                              <p>We are a professional real estate consultancy company. Below mentioned is the list of services.</p>
             <div className="highlight-box">
               <p><strong>Property Identification-</strong> We provide assistance in property search through our technical research and analysis to match customer requirement.</p>
@@ -132,17 +132,17 @@ const Termcondation = () => {
                     </div>
                 </section>
 
-                <section id="eligibility" class="section">
-                    <h2 class="section-title"><i class="fas fa-user-check"></i> 3. ELIGIBILITY</h2>
-                    <div class="section-content">
+                <section id="eligibility" className="section">
+                    <h2 className="section-title"><i className="fas fa-user-check"></i> 3. ELIGIBILITY</h2>
+                    <div className="section-content">
                         <p>The User represents and warrants that he/she is competent and eligible to enter into legally binding agreements and that he/she has the requisite authority to bind himself/herself to these Terms, as determined solely by the provisions of the Indian Contract Act, 1872. The User may not use this Website if he/she is not competent to contract under the Indian Contract Act, 1872, or is disqualified from doing so by any other applicable law, rule or regulation currently in force.</p>
                          </div>
                 </section>
 
                 
-                <section id="term" class="section">
-                    <h2 class="section-title"><i class="fas fa-hourglass-half"></i> 4. TERM</h2>
-                    <div class="section-content">
+                <section id="term" className="section">
+                    <h2 className="section-title"><i className="fas fa-hourglass-half"></i> 4. TERM</h2>
+                    <div className="section-content">
                         <p>These Terms shall continue to form a valid and binding contract between the Parties, and shall continue to be in full force and effect until:</p>
             <ol>
               <li style={{listStyleType: 'none'}}>
@@ -157,24 +157,24 @@ const Termcondation = () => {
 
 
 
-        <section id="termination" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 5. TERMINATION</h2>
-                    <div class="section-content">
+        <section id="termination" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 5. TERMINATION</h2>
+                    <div className="section-content">
                         <p>The Company reserves the right, in its sole discretion, to unilaterally terminate the User's access to the products and services offered on the Website, or any portion thereof, at any time, without notice or cause. The User shall continue to be bound by these Terms, and it is expressly agreed to by the Parties that the User shall not have the right to terminate these Terms till the expiry of the same, as described in Clause 3 hereinabove.</p>
                     </div>
                 </section>
 
 
- <section id="platform" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 6. ONLINE SERVICE PLATFORM</h2>
-                    <div class="section-content">
+ <section id="platform" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 6. ONLINE SERVICE PLATFORM</h2>
+                    <div className="section-content">
                         <p>The Company reserves the right, in its sole discretion, to unilaterally terminate the User's access to the products and services offered on the Website, or any portion thereof, at any time, without notice or cause. The User shall continue to be bound by these Terms, and it is expressly agreed to by the Parties that the User shall not have the right to terminate these Terms till the expiry of the same, as described in Clause 3 hereinabove.</p>
                     </div>
                 </section>
 
- <section id="communication" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 7. COMMUNICATION</h2>
-                    <div class="section-content">
+ <section id="communication" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 7. COMMUNICATION</h2>
+                    <div className="section-content">
                         <p>By using this Website, and providing his/her contact information to the Company through the Website, the User hereby agrees and consents to receiving calls, autodialed and/or pre-recorded message calls, e-mails and SMSs from the Company and/or any of its affiliates or partners at any time, subject to the Policy. In the event that the User wishes to stop receiving any such marketing or promotional calls / email messages / text messages, he/she may inform the concerned. The User agrees and acknowledges that it may take up to seven (7) business days for the Company to give effect to such a request by the User.</p>
             <p>The User expressly agrees that notwithstanding anything contained herein above, he/she may be contacted by the Company or any of its affiliates / partners relating to any service availed of by the User on the Website or anything pursuant thereto.</p>
             <p>It is expressly agreed to by the Parties that any information shared by the User with the Company shall be governed by the Policy</p>
@@ -183,18 +183,18 @@ const Termcondation = () => {
 
 
 
- <section id="charges" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 8. CHARGES</h2>
-                    <div class="section-content">
+ <section id="charges" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 8. CHARGES</h2>
+                    <div className="section-content">
                         <p>The use of this Website by the User, such as browsing the Website is free of cost. The User is only required to pay for the services availed by the User of the Website. However, the Company reserves the right to amend this no-fee policy and charge the User for any or all services offered / rendered. In such an event, the User will be intimated of the same when he/she attempts to access the Website, and the User shall have the option of declining to avail of the services offered on the Website. Any such change, if made, shall come into effect immediately upon such change being notified to the User, unless specified otherwise.</p>
                             </div>
                 </section>
 
 
 
- <section id="obligations" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 9. USER OBLIGATIONS</h2>
-                    <div class="section-content">
+ <section id="obligations" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 9. USER OBLIGATIONS</h2>
+                    <div className="section-content">
                        <p>The User agrees and acknowledges that he/she is a restricted user of this Website, and that he/she:</p>
             <ol>
               <li style={{listStyleType: 'none'}}>
@@ -236,9 +236,9 @@ const Termcondation = () => {
 
 
 
- <section id="suspension" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 10.  SUSPENSION OF USER ACCESS AND ACTIVITY</h2>
-                    <div class="section-content">
+ <section id="suspension" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 10.  SUSPENSION OF USER ACCESS AND ACTIVITY</h2>
+                    <div className="section-content">
                         <p>Not with standing other legal remedies that may be available to it, the Company may in its sole discretion limit the User's access and/ or activity by immediately removing the User's access credentials either temporarily or indefinitely, or suspend / terminate the User's membership, and/or refuse to provide User with access to the Website, without being required to provide the User with notice or caus</p>
             <ol>
               <li style={{listStyleType: 'none'}}>
@@ -253,9 +253,9 @@ const Termcondation = () => {
                 </section>
 
 
-<section id="indemnity" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 11.  INDEMNITY AND LIMITATIONS</h2>
-                    <div class="section-content">
+<section id="indemnity" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 11.  INDEMNITY AND LIMITATIONS</h2>
+                    <div className="section-content">
                         <p>The User hereby expressly agrees to defend, indemnify and hold harmless the Website and the Company, its employees, directors, officers, agents and their successors and assigns and against any and all claims, liabilities, damages, losses, costs and expenses, including attorney's fees, caused by or arising out of claims based upon the User's actions or inactions, including but not limited to any warranties, representations or undertakings, or in relation to the non-fulfilment of any of the User's obligations under this Agreement, or arising out of the User's infringement of any applicable laws, rules and regulations, including but not limited to infringement of intellectual property rights, payment of statutory dues and taxes, claims of libel, defamation, violation of rights of privacy or publicity, loss of service by other subscribers, or the infringement of any other rights of a third party.</p>
             <p>In no event shall the Company/Website be liable to compensate the User or any third party for any special, incidental, indirect, consequential or punitive damages whatsoever, including those resulting from loss of use, data or profits, whether or not foreseeable, and whether or not the Company/Website had been advised of the possibility of such damages, or based on any theory of liability, including breach of contract or warranty, negligence or other tortuous action, or any other claim arising out of or in connection with the User's use of or access to the Website and/or the products, services or materials contained therein.</p>
             <p>The limitations and exclusions in this section apply to the maximum extent permitted by applicable law, and the Parties expressly agree that in the event of any statute, rule, regulation or amendment coming into force that would result in the Company/Website incurring any form of liability whatsoever, these Terms and the Policy will stand terminated one (1) day before the coming into effect of such statute, rule, regulation or amendment. It is further agreed to by the Parties that the contents of this Section shall survive even after the termination or expiry of the Terms and/or Policy.</p>
@@ -263,9 +263,9 @@ const Termcondation = () => {
                 </section>
 
 
-<section id="ip" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 12.  INTELLECTUAL PROPERTY RIGHTS</h2>
-                    <div class="section-content">
+<section id="ip" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 12.  INTELLECTUAL PROPERTY RIGHTS</h2>
+                    <div className="section-content">
                        <p>Unless expressly agreed to in writing, nothing contained herein shall give the User a right to use any of the Website's trade names, trademarks, service marks, logos, domain names, information, questions, answers, solutions, reports and other distinctive brand features, save according to the provisions of these Terms. All logos, trademarks, brand names, service marks, domain names, including material, designs, and graphics created by and developed by the Website and other distinctive brand features of the Website are the property of the Company. Furthermore, with respect to the Website created by the Company, the Company shall be the exclusive owner of all the designs, graphics and the like, related to the Website.</p>
             <p>The User may not use any of the intellectual property displayed on the Website in any manner that is likely to cause confusion among existing or prospective users of the Website, or that in any manner disparages or discredits the Company/Website, to be determined in the sole discretion of the Company.</p>
             <p>The User is aware that the products displayed on the Website are the artistic creations of their respective owners, and that all intellectual property, including but not limited to copyrights, relating to said products resides with the said owners, and that at no point does any such intellectual property stand transferred from the aforementioned creators to the Website/Company, or to the User. The User is aware that the Company merely provides a platform through which the aforementioned products are listed for sale to the users of the Website, and the neither the Company nor the Website owns any of the intellectual property relating to the products displayed on the Website.</p>
@@ -275,9 +275,9 @@ const Termcondation = () => {
 
 
 
-<section id="disclaimer" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 13.  DISCLAIMER OF WARRANTIES AND LIABILITIES</h2>
-                    <div class="section-content">
+<section id="disclaimer" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 13.  DISCLAIMER OF WARRANTIES AND LIABILITIES</h2>
+                    <div className="section-content">
                        <ol>
               <li>Except as otherwise expressly stated on the Website, all products/services offered on the Website are offered on an "as is" basis without any warranty whatsoever, either express or implied.</li>
               <li>The Company/Website makes no representations, express or implied, including without limitation implied warranties of merchantability and fitness of a product for a particular purpose.</li>
@@ -289,17 +289,17 @@ const Termcondation = () => {
                 </section>
 
 
-<section id="submissions" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 14. SUBMISSIONS</h2>
-                    <div class="section-content">
+<section id="submissions" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 14. SUBMISSIONS</h2>
+                    <div className="section-content">
              <p>Any comments, ideas, suggestions, initiation, or any other content contributed by the User to the Company or this Website will be deemed to include a royalty-free, perpetual, irrevocable, nonexclusive right and license for the Company to adopt, publish, reproduce, disseminate, transmit, distribute, copy, use, create derivative works, display worldwide, or act on such content, without additional approval or consideration, in any media, or technology now known or later developed, for the full term of any rights that may exist in such content, and the User hereby waives any claim to the contrary. The User hereby represents and warrants that he/she owns or otherwise controls all of the rights to the content contributed to the Website, and that use of such content by the Company/Website does not infringe upon or violate the rights of any third party. In the event of any action initiated against the Company/Website by any such affected third party, the User hereby expressly agrees to indemnify and hold harmless the Company/Website, for its use of any such information provided to it by the User. The Company reserves its right to defend itself in any such legal disputes that may arise, and recover the costs incurred in such proceedings from the User.</p>
             </div>
                 </section>
 
 
-<section id="dispute" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 15.  DISPUTE RESOLUTION</h2>
-                    <div class="section-content">
+<section id="dispute" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 15.  DISPUTE RESOLUTION</h2>
+                    <div className="section-content">
            <p>It is expressly agreed to by the Parties hereto that the formation, interpretation and performance of these Terms and any disputes arising here from will be resolved through a two-step Alternate Dispute Resolution ("ADR") mechanism. It is further agreed to by the Parties that the contents of this Section shall survive even after the termination or expiry of the Terms and/or Policy.</p>
             <ol>
               <li style={{listStyleType: 'none'}}>
@@ -313,16 +313,16 @@ const Termcondation = () => {
                 </div>
                 </section>
 
-<section id="notices" class="section">
-                    <h2 class="section-title"><i class="fas fa-chevron-right"></i> 16.   NOTICES</h2>
-                    <div class="section-content">
+<section id="notices" className="section">
+                    <h2 className="section-title"><i className="fas fa-chevron-right"></i> 16.   NOTICES</h2>
+                    <div className="section-content">
            <p>Any and all communication relating to any dispute or grievance experienced by the User may be communicated to the Company by the User reducing the same to writing, and sending the same to the registered office of the Company by Registered Post Acknowledgement Due / Speed Post Acknowledgement Due ( RPAD / SPAD).</p>
             </div>
                 </section>
 
-                <section id="misc" class="section">
-                    <h2 class="section-title"><i class="fas fa-file-alt"></i> 17. MISCELLANEOUS PROVISIONS</h2>
-                    <div class="section-content">
+                <section id="misc" className="section">
+                    <h2 className="section-title"><i className="fas fa-file-alt"></i> 17. MISCELLANEOUS PROVISIONS</h2>
+                    <div className="section-content">
                         <ol>
               <li><strong>Entire Agreement:</strong> These Terms, read with the Policy form the complete and final contract between the User and the Company with respect to the subject matter hereof and supersedes all other communications, representations and agreements (whether oral, written or otherwise) relating thereto;</li>
               <li><strong>Waiver:</strong> The failure of either Party at any time to require performance of any provision of these Terms shall in no manner affect such Party's right at a later time to enforce the same. No waiver by either Party of any breach of these Terms, whether by conduct or otherwise, in any one or more instances, shall be deemed to be or construed as a further or continuing waiver of any such breach, or a waiver of any other breach of these Terms.</li>

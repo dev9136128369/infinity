@@ -172,10 +172,10 @@ export default function BlogPage() {
     <h3>Follow us</h3>
     <p className="bp-follow-text">Connect with us on social media</p>
     <div className="bp-socials" role="navigation" aria-label="social links">
-      <a href="#" className="bp-social" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/rakesh-kumar-1aba1a57" className="bp-social" aria-label="LinkedIn">
         <FaLinkedinIn size={16} /> LinkedIn
       </a>
-      <a href="#" className="bp-social" aria-label="Facebook">
+      <a href="https://www.facebook.com/profile.php?id=61579222262692" className="bp-social" aria-label="Facebook">
         <FaFacebookF size={16} /> Facebook
       </a>
       <a href="#" className="bp-social" aria-label="Instagram">

@@ -223,7 +223,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui, -appl
 .container{max-width:var(--max);margin:0 auto;padding:0 20px}
 .center{text-align:center}
 .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--brand-2);font-weight:600}
-.section-title{font-size:clamp(1.4rem, 1.2rem + 1vw, 2rem);margin:0 0 14px;}
+.section-title{font-size:clamp(1.4rem, 1.2rem + 1vw, 2rem);margin:0 0 14px; color; #2c3e50;}
 .section-titles{font-size:2rem;margin:0 25rem 14px; color:white; font-weight:700}
 
 .subtext{color:white; font-size:1.3rem}

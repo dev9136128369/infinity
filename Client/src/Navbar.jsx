@@ -4,7 +4,7 @@ import {
   faPhone, faEnvelope, faBars, faTimes, faCaretDown 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
-  faLinkedin, faFacebook, faInstagram, faYoutube 
+  faLinkedin, faFacebook, faInstagram, faYoutube, faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from "react-router-dom";   // 👈 yaha import kare
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="contact-info">
             <span className="info-item">
               <FontAwesomeIcon icon={faPhone} className="info-icon" />
-              9871967601
+             9899282878
             </span>
             <span className="info-item">
               <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
@@ -62,9 +62,15 @@ const Navbar = () => {
             <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faInstagram} className="social-iconi" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
-              <FontAwesomeIcon icon={faYoutube} className="social-icony" />
+
+
+            <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+              <FontAwesomeIcon icon={faTwitter} className="social-iconi" />
             </a>
+       
+            {/* <a href="#" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+              <FontAwesomeIcon icon={faYoutube} className="social-icony" />
+            </a> */}
           </div>
         </div>
       </div>
