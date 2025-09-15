@@ -245,18 +245,20 @@ const handleSubmit = async (e) => {
             <div style={{marginTop: '2.5rem'}}>
               <h3>Follow Us</h3>
               <div className="social-icons">
-                <a href="#" className="social-icon">
+                <a   href="https://www.linkedin.com/in/rakesh-kumar-1aba1a57" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="social-icon">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" className="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" className="social-icon">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#" className="social-icon">
+                {/* <a href="#" className="social-icon">
                   <i className="fab fa-youtube"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -266,7 +268,8 @@ const handleSubmit = async (e) => {
             <div className="info-card">
               <h3><i className="fas fa-map-marker-alt"></i> Address</h3>
               <div className="contact-info">
-                <p><i className="fas fa-building"></i> G004, Tower D, Golf City, Plot No 8,</p>
+                <p><i className="fas fa-building"></i>D -004,golf city ,plot no -8
+Gate no -1</p>
                 <p><i className="fas fa-map-pin"></i> Sector 75, Noida- 201301</p>
               </div>
             </div>
@@ -292,12 +295,14 @@ const handleSubmit = async (e) => {
         
         {/* Map Section */}
         <div className="map-container">
-          <iframe 
+          {/* <iframe 
             loading="lazy" 
-            src="https://maps.google.com/maps?q=RajLakshmi%20Realty%2C%20Plot%20No%208%2C%20Glof%20City%20Sector%C2%A075%2C%C2%A0Noida.&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" 
+            src="https://maps.google.com/maps?q=RajLakshmi%20Realty%2C%20Plot%20No%208%2C%20Glof%20City%20Sector%C2%A075%2C%C2%A0Noidahttps://maps.app.goo.gl/MhK8W7uPnuoxVj4y9.&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" 
             title="Infinity, Plot No 8, Glof City Sector&nbsp;75,&nbsp;Noida." 
             aria-label="Infinity, Plot No 8, Glof City Sector&nbsp;75,&nbsp;Noida."
-          ></iframe>
+          ></iframe> */}
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1646.6558259217636!2d77.38587386328551!3d28.573696201253274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM0JzIzLjkiTiA3N8KwMjMnMTAuMyJF!5e1!3m2!1sen!2sin!4v1757917840726!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         
         {/* FAQ Section */}
@@ -332,7 +337,7 @@ const handleSubmit = async (e) => {
           <div className="help-phone">9871-96-7601</div>
           <div className="help-hours">Monday to Saturday 9:30 AM- 7:00 PM</div>
           <img 
-            src="https://rajlakshmirealty.com/wp-content/uploads/2023/09/customer-service-150x150.png" 
+            src="/Images/custemerservice.jpg" 
             alt="Customer Service" 
             width="100" 
             style={{borderRadius: '50%', marginBottom: '1.5rem'}}

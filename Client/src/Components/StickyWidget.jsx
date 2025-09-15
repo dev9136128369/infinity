@@ -50,7 +50,7 @@ const StickyWidget = () => {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919871967601"
+        href="https://wa.me/9899282878"
         target="_blank"
         rel="noopener noreferrer"
         className="sticky-button whatsapp-btn"
