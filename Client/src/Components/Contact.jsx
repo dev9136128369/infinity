@@ -253,9 +253,15 @@ const handleSubmit = async (e) => {
                 <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" className="social-icon">
+                <a href="https://www.instagram.com/rak_eshgupta2/" target="_blank" rel="noopener noreferrer"  className="social-icon">
                   <i className="fab fa-instagram"></i>
                 </a>
+                 <a href="https://x.com/home" target="_blank" rel="noopener noreferrer"  className="social-icon">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                 {/* <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+                              <FontAwesomeIcon icon={faTwitter} className="social-iconi" />
+                            </a> */}
                 {/* <a href="#" className="social-icon">
                   <i className="fab fa-youtube"></i>
                 </a> */}

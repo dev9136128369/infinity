@@ -59,12 +59,12 @@ const Navbar = () => {
             <a href="https://www.facebook.com/profile.php?id=61579222262692" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faFacebook} className="social-iconf" />
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+            <a href="https://www.instagram.com/rak_eshgupta2/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faInstagram} className="social-iconi" />
             </a>
 
 
-            <a href="/" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
+            <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" onClick={handleFooterLinkClick}>
               <FontAwesomeIcon icon={faTwitter} className="social-iconi" />
             </a>
        

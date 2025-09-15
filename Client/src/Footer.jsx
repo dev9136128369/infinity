@@ -364,7 +364,7 @@ Gate no -1, Noida-201301</p>
 
       {/* Bottom */}
       <div style={styles.bottom}>
-        <p>&copy; 2025 All rights reserved By: <b>Ciphershield Technologies.</b></p>
+        <p>&copy; 2025 All rights reserved By: <a href="https://www.ciphershieldtech.com/" className="links"><b>Ciphershield Technologies.</b></a></p>
       </div>
     </footer>
   );
