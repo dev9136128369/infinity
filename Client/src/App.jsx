@@ -11,7 +11,7 @@ const Home = lazy(() => import('./Components/Home.jsx'));
 const About = lazy(() => import('./Components/About.jsx'));
 
 const BlogCards = lazy(() => import('./Components/BlogCards.jsx'));
-const Testimonials = lazy(() => import('./Components/testimonials.jsx'));
+const Testimonials = lazy(() => import('./Components/Testimonials.jsx'));
 const Termcondation = lazy(() => import('./Components/Termcondation.jsx'));
 const Contact = lazy(() => import('./Components/Contact.jsx'));
 const Privacy = lazy(() => import('./Components/Privacy.jsx'));
