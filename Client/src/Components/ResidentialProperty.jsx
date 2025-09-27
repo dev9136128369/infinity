@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { Link } from 'react-router-dom';
+
 import { 
   faMapMarkerAlt, 
   faArrowRight, 
@@ -611,12 +614,12 @@ const HeroSection = () => {
         <h1>TOP RESIDENTIAL PROPERTY</h1>
         <p>Looking for comfort, style, and convenience? Explore the finest residential properties designed for modern living.</p>
          <div className="hero-buttons">
-          <a href="/LeasingPropertiesPage" className="hero-btn">
+          {/* <a href="/LeasingPropertiesPage" className="hero-btn">
             TOP LEASING PROPERTY
-          </a>
-          <a href="/TopCommirical" className="hero-btn outline">
+          </a> */}
+          <Link to="/TopCommirical" className="hero-btn outline">
             TOP COMERCIAL PROPERTY
-          </a>
+          </Link>
         </div>
         {/* <button className="side-btn">Learn More</button> */}
       </div>

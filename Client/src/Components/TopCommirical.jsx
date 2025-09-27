@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import {
   faSearch,
   faMapMarkerAlt,
@@ -1057,12 +1058,12 @@ title: "M3M THE LINE",
           <h1>TOP COMMERCIAL PROPERTY</h1>
           <p>Looking for a perfect home/apartment or any other residential property in India? Have a look at our amazing residential properties.</p>
           <div className="hero-buttons">
-            <a href="/LeasingPropertiesPage" className="hero-btn">
+            {/* <a href="/LeasingPropertiesPage" className="hero-btn">
               TOP LEASING PROPERTY
-            </a>
-            <a href="/ResidentialProperty" className="hero-btn outline">
+            </a> */}
+            <Link to="/ResidentialProperty" className="hero-btn outline">
               TOP RESIDENTIAL PROPERTY
-            </a>
+            </Link>
           </div>
         </div>
       </section>

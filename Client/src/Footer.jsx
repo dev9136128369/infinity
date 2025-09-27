@@ -208,8 +208,13 @@ const Footer = () => {
       flex: "1 1 250px",
       minWidth: "250px",
       fontSize: "1.7rem",
-marginTop: "1rem"
+marginTop: "1rem",
+textAlign: "start"
+    }, 
+    icon: {
+marginTop: "5rem",
     },
+
     logoImg: { maxWidth: "160px", marginBottom: "20px" },
     desc: {
       fontSize: "1.2rem",
@@ -260,7 +265,7 @@ marginTop: "1rem"
       fontSize: "1.2rem",
       marginBottom: "10px",
       display: "flex",
-      alignItems: "center",
+      // alignItems: "center",
       gap: "8px",
     },
     newsletterForm: {
@@ -287,9 +292,9 @@ marginTop: "1rem"
       cursor: "pointer",
     },
     bottom: {
-      marginTop: "40px",
-      padding: "15px",
-      fontSize: "1.2rem",
+      marginTop: "20px",
+      padding: "10px",
+      fontSize: ".8rem",
       borderTop: "1px solid rgba(255,255,255,0.2)",
       textAlign: "center",
       background: "black"
@@ -347,8 +352,8 @@ marginTop: "1rem"
         {/* Column 4: Contact & Newsletter */}
         <div style={styles.column}>
           <h3>Contact Info</h3>
-          <p style={styles.contact}><FontAwesomeIcon icon={faMapMarkerAlt} /> D -004,golf city ,plot no -8
-Gate no -1, Noida-201301</p>
+          <p style={styles.contact}><FontAwesomeIcon icon={faMapMarkerAlt} /> D -004, Golf City , Plot No -8
+<br/> Gate No -1, Noida -201301</p>
           <p style={styles.contact}><FontAwesomeIcon icon={faMobileAlt} /> +91-9899282878</p>
           <p style={styles.contact}><FontAwesomeIcon icon={faEnvelope} /> support@infinityrealestate.estate </p>
 

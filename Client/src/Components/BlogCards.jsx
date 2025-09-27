@@ -4,7 +4,7 @@
 import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { MdTrendingUp, MdNewReleases, MdMemory } from "react-icons/md"; // for categories
-
+import { Link } from "react-router-dom";
 const testimonials = [
   {
     id: 1,
@@ -51,6 +51,11 @@ export default function BlogPage() {
     });
   }, []);
 
+
+  const handleFooterLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main className="bp-root">
       {/* HERO */}
@@ -76,7 +81,7 @@ export default function BlogPage() {
           In the past 18 months, the COVID-19 pandemic has significantly reshaped the entire coworking sector, bringing about new ways of working and collaborating. This transformation has also led to the emergence of strategic partnerships between real estate developers and coworking operators, aiming to cater to the evolving needs of businesses and professionals. Industry reports highlight that coworking operators have been actively expanding their portfolios, strengthening their presence across key markets, and positioning themselves as a vital part of the modern real estate ecosystem.
         </p>
 
-        <button className="side-btn">Learn More</button>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
 
       <div className="side-image">
@@ -101,7 +106,7 @@ export default function BlogPage() {
         <p>
          When planning to purchase your first investment property, one of the most important factors to evaluate is the location and the strength of the rental market in that area. A good property should ideally be positioned in a neighborhood that offers reputed schools, abundant employment opportunities, and a strong community environment. In addition, seamless connectivity and transportation access—such as proximity to highways, metro stations, or other transit systems—play a key role in ensuring convenience for both residents and potential tenants. Choosing such a location not only enhances the property’s rental demand but also secures its long-term appreciation potential.  </p>
 
-        <button className="side-btn">Learn More</button>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
 
     
@@ -119,7 +124,7 @@ export default function BlogPage() {
         <p>
         India is expected to witness a significant boost in road infrastructure investment, with Transport Minister Kamal Nath highlighting that nearly US$10 billion is projected to flow into the sector over the next two years. The country already has one of the largest road networks globally, stretching over 3.34 million kilometers, and continues to expand rapidly. To further strengthen connectivity and logistics efficiency, India is actively progressing with the National Highways Development Project (NHDP), which aims to modernize and upgrade critical routes across the nation.    </p>
 
-        <button className="side-btn">Learn More</button>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
   <div className="side-image">
         <img src="/Images/BlogDelhi.jpeg" alt="Real Estate" />
@@ -136,7 +141,7 @@ export default function BlogPage() {
         <p>
          This is your very first post. You can edit it, delete it, or add fresh content to begin your journey. Start creating, sharing your ideas, and building something amazing today! </p>
 
-        <button className="side-btn">Learn More</button>
+        {/* <button className="side-btn">Learn More</button> */}
       </div>
 
   
@@ -221,9 +226,9 @@ export default function BlogPage() {
             <h3 className="bp-cta__title">Don’t miss updates</h3>
             <p className="bp-cta__text">Subscribe to our newsletter for the latest posts and market news.</p>
           </div>
-          <a className="bp-cta__btn" href="/contact">
+          <Link className="bp-cta__btn" to="/contact" onClick={handleFooterLinkClick}>
             Subscribe
-          </a>
+          </Link>
         </div>
       </section>
     </main>

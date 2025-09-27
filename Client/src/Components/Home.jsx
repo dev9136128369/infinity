@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faChevronLeft, faChevronRight, faMapMarkerAlt, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import StatsSection from './StatsSection';
 
+import { Link } from 'react-router-dom';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -214,7 +216,7 @@ const home = () => {
       id: 1,
        title: "How to choose your first Property?",
       description: "There are many things to consider before purchasing your first property.",
-      // link: "https://rajlakshmirealty.com/1589-2/",
+      link: "/",
       image: "/Images/home.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
@@ -225,7 +227,7 @@ const home = () => {
       id: 2,
       title: "Why Invest in Delhi?",
       description: "Delhi is one of the best City to live in India.",
-      // link: "https://rajlakshmirealty.com/why-invest-in-delhi/",
+      link: "/",
       image: "/Images/Invester.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
@@ -235,7 +237,7 @@ const home = () => {
       id: 3,
       title: "Benefits of living in Incuspaze Tower?",
       description: "INCUSPAZE TOWER is a project With the luxurious residential development,",
-      link: "#",
+      link: "/",
       image: "/Images/livingTower.jpeg",
       buttonText: "Click Here",
       date: "Sep 4, 2023",
@@ -561,8 +563,8 @@ function useWindowWidth() {
                     <li key={i}>✔ {feature}</li>
                   ))}
                 </ul>
-                <a
-                  href="/Contact"
+                <Link
+                  to="/Contact"
                   style={{
                     display: "inline-block",
                     padding: width < 768 ? "10px 18px" : "12px 24px",
@@ -582,7 +584,7 @@ function useWindowWidth() {
                   }
                 >
                   Get started
-                </a>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -608,119 +610,10 @@ function useWindowWidth() {
               </div>
           </div>
           
-          {/* Partner Logos Slider */}
-            <div className="partners-carousel">
-          <div className="carousel-container">
-            <div 
-              className="carousel-track"
-              style={{ 
-                transform: `translateX(-${currentSlide * (100 / slidesToShow())}%)`,
-                gridTemplateColumns: `repeat(${partners.length}, calc(${100 / slidesToShow()}% - ${(10 * (slidesToShow() - 1)) / slidesToShow()}px))`
-              }}
-            >
-              {partners.map((partner, index) => (
-                <div key={partner.id} className="partner-slide">
-                  <div className="partner-logo">
-                    <img 
-                      src={partner.image} 
-                      alt={partner.name}
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Navigation Arrows */}
-          <button className="carousel-nav carousel-prev" onClick={prevSlide}>
-            <FontAwesomeIcon icon={faChevronLeft} />
-          </button>
-          <button className="carousel-nav carousel-next" onClick={nextSlide}>
-            <FontAwesomeIcon icon={faChevronRight} />
-          </button>
-
-          {/* Pagination Dots */}
-          <div className="carousel-pagination">
-            {Array.from({ length: Math.ceil(partners.length / slidesToShow()) }).map((_, index) => (
-              <button
-                key={index}
-                className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
-                onClick={() => goToSlide(index)}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        {/* </div> */}
-      </div>
+     
         </div>
       </section>
-        {/* <section className="hero-sections">
-      <div className="hero-background">
-        {backgroundImages.map((image, index) => (
-          <div 
-            key={index}
-            className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
-        ))}
-        <div className="hero-overlay"></div>
-      </div>
-
-      <div className="hero-container">
-        <div className="hero-content">
-          <h1 className="hero-title">Discover Your Dream Property Today </h1>
-          
-          <form className="hero-search-form" role="search">
-            <div className="search-container">
-              <label htmlFor="property-search" className="screen-reader-only">Search properties</label>
-              <input 
-                id="property-search"
-                type="search" 
-                placeholder="Search by City, Location, Project, Developer" 
-                className="search-input"
-              />
-              <button type="submit" className="search-button" aria-label="Search">
-                <FontAwesomeIcon icon={faSearch} />
-              </button>
-            </div>
-          </form>
-          
-          <div className="property-types">
-            <p>
-              <a href="/ResidentialProperty">RESIDENTIAL</a> / 
-              <a href="/TopCommirical">COMMERCIAL</a> / 
-              <a href="/LeasingPropertiesPage">LEASING SPACE</a>
-            </p>
-          </div>
-          
-          <div className="hero-buttons">
-            <div className="button-wrapper">
-              <a href="#" className="cta-button explore-button">
-                Explore More Properties
-              </a>
-            </div>
-            <div className="button-wrapper">
-              <a href="#Contact" className="cta-button callback-button">
-                Get a Call Back
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-       {/* <section className="exclusive-projects-section">
-      <div className="container">
-        <div className="exclusive-projects-content">
-          <div className="section-header">
-            <h2 className="section-title">EXCLUSIVE PROJECTS</h2>
-            <h5 className="section-subtitle">Most Acclaimed Properties on Rajlakshmi Realty</h5>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
-
+  
      <section className="property-slider-section">
       {/* <div className="container"> */}
         <div className="slider-header">
@@ -740,9 +633,9 @@ function useWindowWidth() {
                     <div className="property-image">
                       <img src={property.image} alt={property.title} />
                       <div className="property-overlay">
-                        <a href={property.link} className="view-details-btn">
+                        <Link to={property.link} className="view-details-btn">
                           View Details
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="property-content">
@@ -751,9 +644,9 @@ function useWindowWidth() {
                         <FontAwesomeIcon icon={faMapMarkerAlt} />
                         <span>{property.location}</span>
                       </div>
-                      <a href={property.link} className="property-link">
+                      <Link to={property.link} className="property-link">
                         SEE DETAILS
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1288,16 +1181,61 @@ WORKBEE MEGAPOLIS, SECTOR-48, GURGAON
         </div>
 
         <div className="rl-section-footer">
-          <a href="/BlogCards" className="rl-view-all-button">
+          <Link to="/BlogCards" className="rl-view-all-button">
             View All Articles
             <svg className="rl-btn-arrow" viewBox="0 0 24 24" width="18" height="18">
               <path fill="currentColor" d="M5 12h14m-7-7l7 7-7 7"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
 
+     {/* Partner Logos Slider */}
+            <div className="partners-carousel">
+          <div className="carousel-container">
+            <div 
+              className="carousel-track"
+              style={{ 
+                transform: `translateX(-${currentSlide * (100 / slidesToShow())}%)`,
+                gridTemplateColumns: `repeat(${partners.length}, calc(${100 / slidesToShow()}% - ${(10 * (slidesToShow() - 1)) / slidesToShow()}px))`
+              }}
+            >
+              {partners.map((partner, index) => (
+                <div key={partner.id} className="partner-slide">
+                  <div className="partner-logo">
+                    <img 
+                      src={partner.image} 
+                      alt={partner.name}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button className="carousel-nav carousel-prev" onClick={prevSlide}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className="carousel-nav carousel-next" onClick={nextSlide}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+
+          {/* Pagination Dots */}
+          <div className="carousel-pagination">
+            {Array.from({ length: Math.ceil(partners.length / slidesToShow()) }).map((_, index) => (
+              <button
+                key={index}
+                className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
+                onClick={() => goToSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        {/* </div> */}
+      </div>
 
     </div>
   )

@@ -274,9 +274,9 @@ const handleSubmit = async (e) => {
             <div className="info-card">
               <h3><i className="fas fa-map-marker-alt"></i> Address</h3>
               <div className="contact-info">
-                <p><i className="fas fa-building"></i>D -004,golf city ,plot no -8
-Gate no -1</p>
-                <p><i className="fas fa-map-pin"></i> Sector 75, Noida- 201301</p>
+                <p><i className="fas fa-building"></i>D -004, Golf City , Plot No -8
+Gate No -1 , Noida -201301</p>
+                {/* <p><i className="fas fa-map-pin"></i> Sector 75, Noida- 201301</p> */}
               </div>
             </div>
             
@@ -340,7 +340,7 @@ Gate no -1</p>
         {/* Help Section */}
         <div className="help-section">
           <h2>NEED HELP?</h2>
-          <div className="help-phone">9871-96-7601</div>
+          <div className="help-phone">9899-28-2878</div>
           <div className="help-hours">Monday to Saturday 9:30 AM- 7:00 PM</div>
           <img 
             src="/Images/custemerservice.jpg" 
