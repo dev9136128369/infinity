@@ -191,7 +191,7 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPhone, faEnvelope, faBars, faTimes, faCaretDown 
@@ -204,6 +204,11 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+const width = useWindowWidth();
+
+
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -238,6 +243,39 @@ const Navbar = () => {
       });
     }, 100);
   };
+
+
+ // Check login on mount
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token);
+
+    // Listen for login/logout events
+    const handleStorageChange = () => {
+      const token = localStorage.getItem("token");
+      setIsLoggedIn(!!token);
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setIsLoggedIn(false);
+  };
+
+
+function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return width;
+}
+
 
   return (
     <div className="navbar-container">
@@ -352,6 +390,103 @@ const Navbar = () => {
                     Contact
                   </NavLink>
                 </li>
+                {/* <li>
+                 <NavLink
+                  to="/Login"
+                  style={{
+                    display: "inline-block",
+                    padding: width < 768 ? "10px 18px" : "10px 20px",
+                    background: "#d4af37",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "6px",
+                    marginTop: "15px",
+                    fontSize: width < 768 ? "0.9rem" : "1rem",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.background = "#b8962d")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.background = "#d4af37")
+                  }
+                >
+                  Get started
+                </NavLink>
+                </li> */}
+               <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+  {!localStorage.getItem("token") ? (
+    <NavLink
+      to="/Login"
+      style={{
+        display: "inline-block",
+        padding: width < 768 ? "10px 18px" : "10px 20px",
+        background: "#d4af37",
+        color: "#fff",
+        textDecoration: "none",
+        borderRadius: "6px",
+        marginTop: "15px",
+        fontSize: width < 768 ? "0.9rem" : "1rem",
+        transition: "all 0.3s ease",
+      }}
+      onMouseOver={(e) => (e.currentTarget.style.background = "#b8962d")}
+      onMouseOut={(e) => (e.currentTarget.style.background = "#d4af37")}
+    >
+      Get Started
+    </NavLink>
+  ) : (
+    <>
+      {/* Admin link only if role is admin */}
+     {JSON.parse(localStorage.getItem("user"))?.userType === "admin" && (
+  <NavLink
+    to="/AdminDashboard"
+    style={{
+      display: "inline-block",
+      padding: width < 768 ? "10px 18px" : "10px 20px",
+      background: "#457b9d",
+      color: "#fff",
+      textDecoration: "none",
+      borderRadius: "6px",
+      marginTop: "15px",
+      fontSize: width < 768 ? "0.9rem" : "1rem",
+      transition: "all 0.3s ease",
+    }}
+    onMouseOver={(e) => (e.currentTarget.style.background = "#1d3557")}
+    onMouseOut={(e) => (e.currentTarget.style.background = "#457b9d")}
+  >
+    Admin
+  </NavLink>
+)}
+
+      {/* Logout button */}
+      <button
+        onClick={() => {
+          localStorage.removeItem("token");
+          localStorage.removeItem("user");
+          localStorage.removeItem("role");
+          window.location.href = "/"; // redirect to home after logout
+        }}
+        style={{
+          display: "inline-block",
+          padding: width < 768 ? "10px 18px" : "10px 20px",
+          background: "#e63946",
+          color: "#fff",
+          border: "none",
+          borderRadius: "6px",
+          marginTop: "15px",
+          fontSize: width < 768 ? "0.9rem" : "1rem",
+          cursor: "pointer",
+          transition: "all 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.background = "#c62828")}
+        onMouseOut={(e) => (e.currentTarget.style.background = "#e63946")}
+      >
+        Logout
+      </button>
+    </>
+  )}
+</li>
+
               </ul>
             </div>
             

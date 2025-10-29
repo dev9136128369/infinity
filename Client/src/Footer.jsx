@@ -208,7 +208,7 @@ const Footer = () => {
       flex: "1 1 250px",
       minWidth: "250px",
       fontSize: "1.7rem",
-marginTop: "1rem",
+marginTop: "2rem",
 textAlign: "start"
     }, 
     icon: {

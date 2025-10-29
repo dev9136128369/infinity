@@ -948,6 +948,8 @@ linear-gradient(180deg, #0b1020 0%, #0d1321 100%)}
   .team__grid{grid-template-columns:1fr}
   .cta__box{flex-direction:column;align-items:flex-start}
 }
+  .glance{padding:0px 0}
+  .cta{padding:16px 0 0px}
 `;
 
 

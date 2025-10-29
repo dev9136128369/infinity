@@ -19,8 +19,19 @@ const Disclaimer = lazy(() => import('./Components/Disclaimer.jsx'));
 const TopCommirical = lazy(() => import('./Components/TopCommirical.jsx'));
 const ResidentialProperty = lazy(() => import('./Components/ResidentialProperty.jsx'));
 const LeasingPropertiesPage = lazy(() => import('./Components/LeasingPropertiesPage.jsx'));
+const AdminDashboard = lazy(() => import('./Components/AdminDashboard.jsx'));
+
+
+const Login = lazy(() => import('./Components/Login.jsx'));
+
 
 function App() {
+
+  const PrivateRoute = ({ children }) => {
+  const token = localStorage.getItem('token');
+  return token ? children : <Navigate to="/login" />;
+};
+
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
@@ -37,6 +48,16 @@ function App() {
         <Route path="/TopCommirical" element={<TopCommirical />} />
         <Route path="/ResidentialProperty" element={<ResidentialProperty />} />
         <Route path="/LeasingPropertiesPage" element={<LeasingPropertiesPage />} />
+         <Route 
+          path="/AdminDashboard" 
+          element={
+            <PrivateRoute>
+              <AdminDashboard />
+            </PrivateRoute>
+          } 
+        />
+        <Route path="/Login" element={<Login />} />
+
 
         </Routes>
       </Suspense>

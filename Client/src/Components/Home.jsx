@@ -471,7 +471,7 @@ const propertiesr = [
 
 
 
-// ✅ Custom Hook for window width
+//  Custom Hook for window width
 function useWindowWidth() {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -528,6 +528,7 @@ function useWindowWidth() {
                   zIndex: 2,
                   padding: width < 768 ? "20px" : "80px",
                   paddingTop: width < 768 ? "13rem" : "9rem",
+                  marginTop: "2.5rem"
                 }}
               >
                 <h1
