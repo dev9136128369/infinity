@@ -3648,7 +3648,9 @@ background-color: #00000033;
   .rl-section-subtitle,
   .rl-card-description,
   .rl-card-meta {
-    color: #d1d5db;
+    /* color: #d1d5db;*/
+    color: #000000;
+    
   }
   
   .rl-card-footer {
