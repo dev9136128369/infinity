@@ -3629,9 +3629,9 @@ background-color: #00000033;
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
-  .rl-blog-section {
+  /* .rl-blog-section {
     background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-  }
+  } */
   
   .rl-blog-card {
     background: #2d3748;
