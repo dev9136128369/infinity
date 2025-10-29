@@ -1630,7 +1630,7 @@ const PropertyCard = ({ property }) => {
 
 // Main Component
 const CommercialPropertiesPage = () => {
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://infinity-gnua.onrender.com";
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
