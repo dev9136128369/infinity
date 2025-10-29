@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 // CORS Configuration
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: "https://www.infinityrealestate.estate", 
   credentials: true
 }));
 
