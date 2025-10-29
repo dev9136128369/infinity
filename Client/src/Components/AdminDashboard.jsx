@@ -450,7 +450,7 @@ const [editingProductId, setEditingProductId] = useState(null);
         return;
       }
 
-      const response = await fetch('http://localhost:8000/api/admin/products', {
+      const response = await fetch('https://infinity-gnua.onrender.com/api/admin/products', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -543,11 +543,11 @@ const [editingProductId, setEditingProductId] = useState(null);
     }
 
     // 👉 Decide URL and method
-    let url = 'http://localhost:8000/api/admin/products';
+    let url = 'https://infinity-gnua.onrender.com/api/admin/products';
     let method = 'POST';
 
     if (editingProductId) {
-      url = `http://localhost:8000/api/admin/products/${editingProductId}`;
+      url = `https://infinity-gnua.onrender.com/api/admin/products/${editingProductId}`;
       method = 'PUT';
     }
 
@@ -608,7 +608,7 @@ const [editingProductId, setEditingProductId] = useState(null);
   const deleteProduct = async (productId) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        const response = await fetch(`http://localhost:8000/api/admin/products/${productId}`, {
+        const response = await fetch(`https://infinity-gnua.onrender.com/api/admin/products/${productId}`, {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${token}`,
