@@ -127,7 +127,7 @@ router.get('/products', async (req, res) => {
     const productsWithFullUrls = products.map(product => ({
       ...product._doc,
       bannerImage: product.bannerImage 
-        ? `http://localhost:8000/api/admin/image/${product.bannerImage}`
+        ? `https://infinity-gnua.onrender.com/api/admin/image/${product.bannerImage}`
         : '/Images/placeholder-property.jpg'
     }));
     res.json({ success: true, products: productsWithFullUrls });
