@@ -1575,7 +1575,7 @@ const Newsletter = () => {
 
 // Main Component
 const ResidentialPropertiesPage = () => {
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://infinity-gnua.onrender.com";
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
