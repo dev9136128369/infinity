@@ -726,7 +726,8 @@ const [editingProductId, setEditingProductId] = useState(null);
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="description">Description *</label>
+                  {/* <label htmlFor="description">Description *</label> */}
+                  <label htmlFor="description">Location *</label>
                   <textarea
                     id="description"
                     name="description"
