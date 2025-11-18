@@ -1187,6 +1187,7 @@ const styles = `
   .side-image img {
     width: 100%;
     max-width: 600px;
+    margin-top: 1rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     margin-top: 1rem;
