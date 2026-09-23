@@ -355,7 +355,7 @@ marginTop: "5rem",
           <p style={styles.contact}><FontAwesomeIcon icon={faMapMarkerAlt} /> D -004, Golf City , Plot No -8
 <br/> Gate No -1, Noida -201301</p>
           <p style={styles.contact}><FontAwesomeIcon icon={faMobileAlt} /> +91-9899282878</p>
-          <p style={styles.contact}><FontAwesomeIcon icon={faEnvelope} /> support@infinityrealestate.estate </p>
+          <p style={styles.contact}><FontAwesomeIcon icon={faEnvelope} /> support@infinityrealestate.property </p>
 
           <h3 style={{ marginTop: "20px" }}>Newsletter</h3>
           <form style={styles.newsletterForm}>

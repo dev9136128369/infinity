@@ -288,7 +288,7 @@ Gate No -1 , Noida -201301</p>
               <p>For any Business query, use the following details to contact us</p>
               <div className="contact-info">
                 <p><i className="fas fa-phone"></i>9899282878</p>
-                <p><i className="fas fa-envelope"></i> support@infinityrealestate.estate</p>
+                <p><i className="fas fa-envelope"></i> support@infinityrealestate.property</p>
               </div>
             </div>
             

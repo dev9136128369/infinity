@@ -289,7 +289,7 @@ function useWindowWidth() {
             </span>
             <span className="info-item">
               <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
-              support@infinityrealestate.estate
+              support@infinityrealestate.property
             </span>
           </div>
           <div className="social-icons">
