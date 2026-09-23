@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://infinityrealestate.estate/sitemap.xml
+Disallow: /AdminDashboard
+Disallow: /admindashboard
+Disallow: /Login
+Disallow: /login
+ 
+Sitemap: https://www.infinityrealestate.property/sitemap.xml

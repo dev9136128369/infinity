@@ -233,26 +233,12 @@ router.put('/products/:id', auth, upload.single('bannerImage'), async (req, res)
       product.bannerImage = await uploadToGridFS(req.file); // Naya filename save karein
     }
 
-    // await product.save();
-    // res.json({
-    //   success: true,
-    //   message: 'Product updated successfully',
-    //   product
-    // });
-
     await product.save();
-const baseUrl = getBaseUrl(req);
-const responseProduct = {
-  ...product._doc,
-  bannerImage: product.bannerImage 
-    ? `${baseUrl}/api/admin/image/${product.bannerImage}`
-    : '/Images/placeholder-property.jpg'
-};
-res.json({
-  success: true,
-  message: 'Product updated successfully',
-  product: responseProduct
-});
+    res.json({
+      success: true,
+      message: 'Product updated successfully',
+      product
+    });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }
