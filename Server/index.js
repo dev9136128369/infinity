@@ -26,7 +26,9 @@ app.use(cors({
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "https://www.infinityrealestate.estate",
-    "https://infinityrealestate.estate"
+    "https://infinityrealestate.estate",
+    "https://infinity-back.onrender.com",
+    "https://infinity-front-ufca.onrender.com"
   ],
   credentials: true
 }));
@@ -34,7 +36,7 @@ app.use(cors({
 app.use(express.json());
 
 // Serve static files from uploads directory
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // MongoDB Connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/realestate';
