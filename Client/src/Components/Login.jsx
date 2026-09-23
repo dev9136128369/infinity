@@ -65,7 +65,7 @@ const LoginPage = () => {
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
         
-        console.log('Token saved:', data.token);
+        // console.log('Token saved:', data.token);
 
         if (data.user.userType === 'admin') {
           navigate('/AdminDashboard');
