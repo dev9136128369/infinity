@@ -1,59 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://infinityrealestate.estate/</loc>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/About</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/BlogCards</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/Testimonials</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/Termcondation</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/Contact</loc>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/Privacy</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/Disclaimer</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/TopCommirical</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/ResidentialProperty</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://infinityrealestate.estate/LeasingPropertiesPage</loc>
-    <priority>0.7</priority>
-  </url>
-
+<url>
+<loc>https://www.infinityrealestate.property/</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/About</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/ResidentialProperty</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/TopCommirical</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/LeasingPropertiesPage</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/BlogCards</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/Testimonials</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/Contact</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/Privacy</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/Termcondation</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://www.infinityrealestate.property/Disclaimer</loc>
+<lastmod>2026-09-23</lastmod>
+<priority>0.3</priority>
+</url>
 </urlset>
