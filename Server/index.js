@@ -25,6 +25,7 @@ app.use(cors({
     "http://localhost:5173",
     "http://localhost:3000",
     "http://127.0.0.1:5173",
+    "https://infinity-o3g6.onrender.com",
     "https://www.infinityrealestate.estate",
     "https://infinityrealestate.estate",
     "https://infinity-back.onrender.com",
